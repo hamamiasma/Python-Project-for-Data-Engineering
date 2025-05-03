@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    
+<script type="text/javascript" data-description="sourcepoint stub code">
+    !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 5); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
+</script>
+<script data-description="sourcepoint configuration">
+window._sp_ = {
+    config: {"accountId":1254,"propertyId":7324,"gdpr":{"consentLanguage":"de","targetingParams":{"acps":"false"}},"baseEndpoint":"https://cdn.privacy-mgmt.com","isSPA":true,"cpPropertyId":"003ad223"}}
+</script>
+<script src="https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js" async></script>
+
+<script type="text/javascript" data-description="contentpass integration">
+    (function() {
+        var cpBaseUrl = 'https://cp.transfermarkt.de';
+        var cpController = cpBaseUrl + '/now.js';
+        var cpPropertyId = '003ad223';
+
+        !function(C,o,n,t,P,a,s){C['CPObject']=n;C[n]||(C[n]=function(){
+        (C[n].q=C[n].q||[]).push(arguments)});C[n].l=+new Date;a=o.createElement(t);
+        s=o.getElementsByTagName(t)[0];a.src=P;s.parentNode.insertBefore(a,s)}
+        (window,document,'cp','script',cpController);
+
+        !function(C,o,n,t,P){if(!C[n].patched){cp('extension','authenticate');P=C[n].q.push;
+        C[n].q.push=function(a){if(a[0]==='authenticate'){if((o['cookie']||'').indexOf('_cpauthhint=')===-1&&
+        !(C['localStorage']||{})['_cpuser']&&C.location.href.toLowerCase().indexOf('cpauthenticated')===-1){
+        t={isLoggedIn:function(){return false;},hasValidSubscription:function(){return false;}};
+        (typeof a[1]==='function'&&a[1](null,t));C[n].afp=true;P.apply(C[n].q,[['authenticate',null]]);
+        return t;}}P.apply(C[n].q,[a]);}}}
+        (window,document,'cp',false);
+
+        cp('create', cpPropertyId, {
+        baseUrl: cpBaseUrl
+        });
+
+        cp('render', {
+        onFullConsent: function() {
+            console.log('[DEMO] onFullConsent');
+        }
+        })
+    })()
+</script>
+
+<script type="text/javascript" data-description="contentpass sourcepoint fast path">
+(function () {
+    cp('authenticate', function(err, user) {
+        if (err || (!user.isLoggedIn() && !user.hasValidSubscription())) {
+        // console.log('[SPCP] Taking fast path');
+        (function spExecMsg() {
+            if (window._sp_ && window._sp_.executeMessaging) {
+            if (!window._sp_.config.isSPA) {
+                // console.warn('[SPCP] Sourcepoint not in SPA mode!');
+            } else if (window._sp_.version) {
+                // console.log('[SPCP] Sourcepoint already running');
+            } else {
+                // console.log('[SPCP] Starting Sourcepoint');
+                window._sp_.executeMessaging();
+            }
+            } else {
+            // console.log('[SPCP] Sourcepoint not loaded yet. Retrying.');
+            setTimeout(spExecMsg, 10);
+            }
+        })();
+        }
+    });
+    })();
+</script>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="192x192" href="/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://tmssl.akamaized.net/images/tm_logo.png" />
+<meta property="og:description" content="" />
+<meta property="og:title" content="Die wertvollsten Fußball-Spieler" />
+<meta property="og:url" content="https://www.transfermarkt.de/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="de" rel="alternate" href="https://www.transfermarkt.de/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="de-LU" rel="alternate" href="https://www.transfermarkt.de/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="de-AT" rel="alternate" href="https://www.transfermarkt.at/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="de-CH" rel="alternate" href="https://www.transfermarkt.ch/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="tr" rel="alternate" href="https://www.transfermarkt.com.tr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="it-CH" rel="alternate" href="https://www.transfermarkt.it/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="it" rel="alternate" href="https://www.transfermarkt.it/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="pl" rel="alternate" href="https://www.transfermarkt.pl/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-GB" rel="alternate" href="https://www.transfermarkt.co.uk/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-IE" rel="alternate" href="https://www.transfermarkt.co.uk/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-ES" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-CL" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-VE" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-EC" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-CU" rel="alternate" href="https://www.transfermarkt.es/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="nl" rel="alternate" href="https://www.transfermarkt.nl/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="pt" rel="alternate" href="https://www.transfermarkt.pt/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="ru" rel="alternate" href="https://www.transfermarkt.world/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr-CH" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr-CA" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr-CI" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr-LU" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="fr-BE" rel="alternate" href="https://www.transfermarkt.fr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="pt-BR" rel="alternate" href="https://www.transfermarkt.com.br/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-US" rel="alternate" href="https://www.transfermarkt.us/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-CA" rel="alternate" href="https://www.transfermarkt.us/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-IN" rel="alternate" href="https://www.transfermarkt.co.in/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en-ZA" rel="alternate" href="https://www.transfermarkt.co.za/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="x-default" rel="alternate" href="https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="en" rel="alternate" href="https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="nl-BE" rel="alternate" href="https://www.transfermarkt.be/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="ro" rel="alternate" href="https://www.transfermarkt.ro/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="el-GR" rel="alternate" href="https://www.transfermarkt.gr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="ko-KR" rel="alternate" href="https://www.transfermarkt.co.kr/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-AR" rel="alternate" href="https://www.transfermarkt.com.ar/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-MX" rel="alternate" href="https://www.transfermarkt.mx/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-CO" rel="alternate" href="https://www.transfermarkt.co/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="es-PE" rel="alternate" href="https://www.transfermarkt.pe/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="ms" rel="alternate" href="https://www.transfermarkt.my/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="ja" rel="alternate" href="https://www.transfermarkt.jp/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link hreflang="id" rel="alternate" href="https://www.transfermarkt.co.id/spieler-statistik/wertvollstespieler/marktwertetop" />
+<link rel="next" href="https://www.transfermarkt.de/spieler-statistik/wertvollstespieler/marktwertetop?page=2" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-main.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main_desktop.css?lm=1746024697" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-discover.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-button-list.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-link-list.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-print.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-chosen.min.css?lm=1746025260" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main.css?lm=1746024697" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/paginator.css?lm=1746024697" />
+<link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/statistiken.css?lm=1746024697" />
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/vendor/jquery.min.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/assets/b7c5571cf8957553f95f6d9069eaed67/jquery.ba-bbq.min.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/ads/tisoomi.de.min.js?lm=1746260702"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/assets/b344ec51bd68be8ed48379c9e69eb01d/js/jquery.scrollTo.min.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/assets/b344ec51bd68be8ed48379c9e69eb01d/js/elinkpagermobile.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/main.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.ajaxaddition.jquery.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/functions.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/main_desktop.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.jquery.js?lm=1746024697"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+console.info("%c [TM-ADs] Initialize Ads on domain .de (marktwertetop/wertvollstespieler)", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Tisoomi is active -> add Tisoomi script", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Set zone to sonstiges for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Render slot rectangle1 (rectangle/mrec) for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format rectangle1", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Render slot skyscraper-left-bound (sky2/skyscraper2) for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format skyscraper-left-bound", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Render slot skyscraper (sky/skyscraper) for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format skyscraper", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Render slot billboard (banner/superbanner) for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format billboard", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Render slot fullsize_contentad (pubperform/fullsize_contentad) for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Wrap ad container with Tisoomi for format fullsize_contentad", "background: #282828; color: #bada55")
+    var oddsServe = function(placement,competition,match,node) {
+        if (!node){
+            var s=document.readyState==='loading'?document.getElementsByTagName('script'):[];
+            node=s.length?s[s.length-1].parentNode:null;
+        }
+        oddsServe.queue.push({contentUnitId:placement,competition:competition,match:match,node:node});
+    }
+    
+    oddsServe.onInit=function(callbacks){
+        if (typeof window.__tcfapi === 'function') {
+            __tcfapi('addEventListener', 2, function(tcdata, success) {
+                let tcf20compatibleString;
+                if(success) {
+                    if (tcdata.eventStatus === 'useractioncomplete') {
+                        tcf20compatibleString = tcdata.tcString;
+                    } else if (tcdata.eventStatus === 'tcloaded') {
+                        tcf20compatibleString = tcdata.tcString;
+                    }
+                    callbacks.setGdprOptions({
+                        gdpr:1,
+                        gdpr_pd:1,
+                        gdpr_consent:tcf20compatibleString,
+                    });
+                }
+            });
+        } else {
+            console.warn('E2: __tcfapi not found');
+        }
+    };
+    oddsServe.options={gdpr_wait:true};
+    oddsServe.queue=[];
+console.info("%c [TM-ADs] Add adslot configuration for rectangle1 | skyscraper-left-bound | skyscraper | billboard | fullsize_contentad", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Adslots without configuration: rectangle2 | superbanner | skyscraperbtf | richmedia | 1by1px", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Register slots with JS vendor lib", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Add contentGroup1 with value statistik", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Add contentGroup2 with value global", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Add contentGroup3 with value wertvollstespieler", "background: #282828; color: #bada55")
+window.SDG = window.SDG || {};
+window.SDG.cmd = window.SDG.cmd || [];
+window.SDG.cmd.push(() => {
+  SDG.Publisher.setZone("sonstiges");
+  SDG.Publisher.addKeyValue("contentGroup1", "statistik");
+  SDG.Publisher.addKeyValue("contentGroup2", "global");
+  SDG.Publisher.addKeyValue("contentGroup3", "wertvollstespieler");
+  SDG.Publisher.registerSlot("banner", "superbanner")
+    .configure({
+      reserveSpace: true,
+      showLoadingAnimation: true,
+      fixedHeight: 250,
+      showAdvertLabel: false,
+      centerAds: true,
+    })
+    .load();
+  SDG.Publisher.registerSlot("rectangle", "mrec")
+    .configure({
+      reserveSpace: true,
+      fixedHeight: 250,
+      showLoadingAnimation: true,
+      showAdvertLabel: false,
+      centerAds: true,
+    })
+    .load();
+  SDG.Publisher.registerSlot("sky2", "skyscraper2")
+    .configure({
+      showAdvertLabel: false,
+      centerAds: true,
+    })
+    .load();
+  SDG.Publisher.registerSlot("sky", "skyscraper")
+    .configure({
+      showAdvertLabel: false,
+      centerAds: true,
+    })
+    .load();
+  SDG.Publisher.registerSlot("pubperform", "fullsize_contentad")
+    .configure({
+      lazyLoad: true,
+      showAdvertLabel: false,
+      centerAds: true,
+    })
+    .load();
+ SDG.Publisher.finalizeSlots();
+});
+
+console.info("%c [TM-ADs] Render ad slots js for stroeer", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Added external ad script https://cdn.stroeerdigitalgroup.de/metatag/live/transfermarkt.de/metaTag.min.js for stroeer on marktwerte_die_wertvollsten_spieler", "background: #282828; color: #bada55")
+console.info("%c [TM-ADs] Skipped external script https://imagesrv.adition.com/js/srp.js for adition on marktwerte_die_wertvollsten_spieler", "background: #282828; color: #bada55")
+/*]]>*/
+</script>
+<title>Die wertvollsten Fußball-Spieler | Transfermarkt</title>
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152.png">
+    
+<script type="text/javascript">
+   tmData = {
+       loggedIn : "0",
+       tmTraffic: "0",
+   };
+</script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    let utmVars = {
+        eVar1: urlParams.get('utm_campaign'),
+        eVar6: urlParams.get('utm_source'),
+        eVar24: urlParams.get('utm_medium')
+    };
+    Object.keys(utmVars).forEach((k) => utmVars[k] == null && delete utmVars[k]);
+
+    window.tmAnalyticsDataLayer = window.tmAnalyticsDataLayer || [];
+    window.tmAnalytics = {
+        dimensions: {
+            eVar10: '',
+			...utmVars,
+            evar19: window.location.href,
+            eVar35 : '',
+			eVar37 : '',
+    },
+    properties: {
+        prop2: 'statistik',
+		prop3: 'global',
+		prop4: 'wertvollstespieler',
+		prop5: '',
+		prop14: 'statistik_global_wertvollstespieler_',
+		prop9: window.location.hostname,
+        prop10: window.location.href,
+        prop1 : 'false',
+    },
+    pageDetails: {
+        pageViews: {
+            value: 1
+        },
+        isErrorPage: 'false',
+            isHomepage: 'false',
+            name: 'Die wertvollsten Fußball-Spieler | Transfermarkt',
+            URL: window.location.href,
+            server: 'web06'
+    },
+    };
+
+function tmEventForLink(category, aTag, label) {
+    const url = new URL(aTag.href);
+    const link = url.pathname + url.search;
+    tmEvent(category, link, label);
+}
+
+function tmEvent(category, action, label, detail = '') {
+    if (typeof gtag === 'function') {
+        gtag('event',
+            action,
+            {
+                'event_category': category,
+                'event_label': label
+            }
+        );
+    }
+
+    tmAnalyticsDataLayer.push({
+        event: 'tmEvent',
+        tmEvent: {
+            customDimensions: {
+                eVars: {
+                    ...tmAnalytics.dimensions
+                },
+                props: {
+                    prop6: category,
+                    prop7: action,
+                    prop8: label,
+                    prop17: detail,
+                    ...tmAnalytics.properties
+                }
+            },
+            event1to100: {
+                event7: {
+                    value: 1
+                },
+                event8: null,
+            },
+            session: {
+                web: {
+                    webInteraction: {
+                        linkClicks: {
+                            value: 1
+                        }
+                    },
+                    webPageDetails: {
+                        ...tmAnalytics.pageDetails,
+                        ...{
+                            pageViews: {
+                                value: null
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+    tmAnalyticsDataLayer.push(function (dl) {
+        const state = dl.getState();
+    });
+}
+function tmTrackingAndAds() {
+    if (typeof gtag === 'function') {
+        gtag("event", "page_view", {
+            page_path: "/jsContent" + window.location.pathname
+        });
+    }
+
+    tmAnalyticsDataLayer.push({
+        event: 'tmTrackingAndAds',
+        tmTrackingAndAds: {
+            customDimensions: {
+                eVars: tmAnalytics.dimensions,
+                props: tmAnalytics.properties
+            },
+            event1to100: {
+                event7: null,
+                event8: {
+                    value: 1
+                }
+            },
+            session: {
+                web: {
+                    webInteraction: {
+                        linkClicks: {
+                            value: null
+                        }
+                    },
+                    webPageDetails: {
+                        ...tmAnalytics.pageDetails,
+                        ...{
+                            pageViews: {
+                                value: 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    });
+    tmAnalyticsDataLayer.push(function (dl) {
+        const state = dl.getState();
+    });
+}
+function tmTiming(value, name, event_category, event_label) {
+    console.log('tmTiming', value, name, event_category, event_label);
+}
+
+        !function(e,a,n,t){var i=e.head;if(i){
+            if (a) return;
+            var o=e.createElement("style");
+            o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+        (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
+
+            !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+                []).push(o),n[o]=function(){var u=arguments;return new Promise(
+                function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+            (window,["alloy"]);
+</script>
+<tm-consent
+    type="adobe"
+    no-checkbox
+    embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vYXNzZXRzLmFkb2JlZHRtLmNvbS83Y2FkY2E5NWRkOWEvY2Q0YWI4ODRkMjMxL2xhdW5jaC0wMTI3MmI0MDBjNjUubWluLmpzIj48L3NjcmlwdD4=">
+</tm-consent>
+
+    <script type="text/javascript" src="https://tmssl.akamaized.net//ads/ads.js"></script>
+    <script type="text/javascript">
+        window.tmGaId = "UA-3816204-13";
+
+        function sendIvwData() {}
+    </script>
+    </head>
+
+<body class="desktop " itemscope itemtype="http://schema.org/WebPage" data-tm-tld="de" data-cmp-layer-id="731291" data-db-name="de-der-titan">
+                <div id="werbung_superbanner_wrapper">
+                            </div>
+        
+                <tm-domain-note></tm-domain-note>
+        <div id="main">
+                    <button id="back-to-top" title="Nach oben">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17.795" height="10.009" viewBox="0 0 17.795 10.009">
+                    <path id="angle-up" d="M20.683,17.01a1.112,1.112,0,0,1-.786-.326l-7-7-7,7a1.112,1.112,0,1,1-1.573-1.573l7.785-7.785a1.112,1.112,0,0,1,1.573,0l7.785,7.785a1.112,1.112,0,0,1-.786,1.9Z" transform="translate(-4 -7)" fill="#fff"/>
+                </svg>
+            </button>
+            <div class="werbung-skyscraper-left-bound-container">
+                
+<div class="werbung ad-placement-note werbung-skyscraper-left-bound" data-ad-placement-note="Werbung">
+  <div id="skyscraper2"></div>
+</div>
+
+
+            </div>
+            <div class="werbung-skyscraper-container">
+                <script type="text/javascript">//H3IXPRY("skyscraper")</script>
+<div class="werbung ad-placement-note werbung-skyscraper" data-ad-placement-note="Werbung">
+  <div id="skyscraper"></div>
+</div>
+
+<span class="H3IXPRY_end"></span>
+            </div>
+
+            <div class="werbung-skyscraperbtf-container">
+                            </div>
+        
+        <div id="tm-overlay"></div>
+
+                    <div class="tm-header__box">
+                <!-- logo  -->
+                <a href="/" class="tm-header__logo" onclick="tmEvent('hauptnavi', '/', 'TM-Logo');">
+                    <img src="https://tmsi.akamaized.net/head/tm_logo_rebrush.svg" height="62" width="156" title="Transfermarkt" alt="Transfermarkt">
+                </a>
+
+                <!-- domainswitcher  -->
+                <div class="domin-swicher">
+                    <tm-domain-switcher
+                        tld="de"
+                        translations='{&quot;chooseYourDomain&quot;:&quot;W\u00e4hle deine Domain&quot;}'></tm-domain-switcher>
+                </div>
+
+                <!-- live -->
+                <tm-live-match-count
+                    class="tm-header__live"
+                    auto-request                    content='{&quot;liveMatches&quot;:&quot;Livespiele&quot;,&quot;liveMatch&quot;:&quot;Livespiel&quot;,&quot;live&quot;:&quot;Live&quot;}'></tm-live-match-count>
+
+                <!-- Search -->
+                                    <div class="tm-header__search " id="schnellsuche-platz">
+                        <form name="schnellsuche" id="schnellsuche" class="tm-header__form" action="/schnellsuche/ergebnis/schnellsuche">
+                            <input type="text" name="query" class="tm-header__input--search-field" onClick="" placeholder="Suchbegriff eingeben (Spieler, Verein,...)" autocorrect="off" spellcheck="false" value="" />
+                            <button type="submit" value="" class="tm-header__input--search-send" alt="Suchen">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M17.825,16.847 L14.28,13.303 C17.072,9.987 16.756,5.061 13.563,2.13 C10.37,-0.8 5.435,-0.695 2.37,2.37 C-0.695,5.435 -0.8,10.37 2.13,13.563 C5.061,16.756 9.987,17.072 13.303,14.28 L16.847,17.825 C17.121,18.069 17.538,18.057 17.797,17.797 C18.057,17.538 18.069,17.121 17.825,16.847 z M1.418,8.108 C1.417,4.413 4.412,1.417 8.107,1.416 C11.802,1.415 14.798,4.411 14.799,8.106 C14.799,11.801 11.804,14.797 8.108,14.797 C4.414,14.797 1.419,11.803 1.418,8.108 z" fill="#000" />
+                                </svg>
+                            </button>
+                        </form>
+                        <a href="/detailsuche/spielerdetail/suche" title="Zur Spieler-Detailsuche" id="detailsuche-head" class="tm-header__search-detail">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0, 0, 18, 18">
+                                <path d="M3.138,3.558 C3.137,1.593 4.727,0 6.69,0 C8.652,-0 10.243,1.592 10.243,3.556 C10.243,5.521 8.653,7.113 6.69,7.113 C4.729,7.113 3.138,5.522 3.138,3.558 z M8.233,13.187 C8.261,11.778 8.861,10.442 9.893,9.486 C9.967,9.418 9.997,9.315 9.971,9.219 C9.946,9.119 9.863,9.044 9.76,9.03 C9.331,8.938 8.893,8.893 8.454,8.895 L4.906,8.895 C3.583,8.808 2.286,9.298 1.35,10.239 C0.414,11.179 -0.07,12.479 0.021,13.804 C-0.085,14.656 0.209,15.509 0.817,16.114 C1.425,16.72 2.279,17.009 3.13,16.897 L9.266,16.897 C9.372,16.895 9.467,16.831 9.508,16.732 C9.549,16.634 9.527,16.521 9.453,16.444 C8.665,15.544 8.232,14.387 8.236,13.191 z M17.805,17.804 C17.68,17.93 17.511,18 17.334,18 C17.158,18 16.989,17.93 16.864,17.804 L15.237,16.177 C13.686,17.242 11.58,16.949 10.378,15.501 C9.176,14.052 9.274,11.926 10.604,10.594 C11.934,9.263 14.058,9.165 15.505,10.368 C16.952,11.571 17.244,13.68 16.181,15.233 L17.805,16.866 C18.065,17.126 18.065,17.548 17.805,17.808 z M15.484,13.182 C15.484,11.911 14.455,10.881 13.186,10.881 C11.917,10.881 10.888,11.911 10.888,13.182 C10.888,14.452 11.917,15.482 13.186,15.482 C14.455,15.482 15.484,14.452 15.484,13.182 z" fill="#000" />
+                            </svg>
+                        </a>
+                    </div>
+                
+                <!-- login button -->
+                <div class="tm-header__login">
+                    <tm-userbox translations='{&quot;addFavorite&quot;:&quot;Diese Seite meinen Favoriten hinzuf\u00fcgen&quot;,&quot;adminArea&quot;:&quot;Adminbereich&quot;,&quot;adminTools&quot;:&quot;Admintools&quot;,&quot;allFavoriteLinkText&quot;:&quot;Zu meinen favorisierten Links&quot;,&quot;applyAsModOrDatascout&quot;:&quot;Bewirb dich als Moderator oder Datenpfleger&quot;,&quot;checkAllNews&quot;:&quot;Zu allen News&quot;,&quot;checkAllRumours&quot;:&quot;Zu allen Ger\u00fcchten&quot;,&quot;chooseYourDomain&quot;:&quot;W\u00e4hle deine Domain&quot;,&quot;clickAgain&quot;:&quot;Nochmal klicken, um den Shortlink in die Zwischenablage zu kopieren&quot;,&quot;clubBoard&quot;:&quot;Vereinsforum&quot;,&quot;copied&quot;:&quot;Copied to your clipboard&quot;,&quot;copyLink&quot;:&quot;Link kopieren&quot;,&quot;createAccount&quot;:&quot;Erstelle deinen Account&quot;,&quot;createNewMessage&quot;:&quot;Neue Nachricht verfassen&quot;,&quot;createShortlink&quot;:&quot;Shortlink erstellen&quot;,&quot;createShortNews&quot;:&quot;Kurzmeldung erstellen&quot;,&quot;dashboard&quot;:&quot;\u00dcbersicht&quot;,&quot;dataAdministration&quot;:&quot;Datenpflege&quot;,&quot;debug&quot;:&quot;Debug&quot;,&quot;deleteAll&quot;:&quot;Alle l\u00f6schen&quot;,&quot;deleteConfirm&quot;:&quot;Ja, alle l\u00f6schen.&quot;,&quot;editText&quot;:&quot;Bearbeiten&quot;,&quot;forgotPassword&quot;:&quot;Passwort vergessen?&quot;,&quot;forgotUsername&quot;:&quot;Username vergessen?&quot;,&quot;forum&quot;:&quot;forum&quot;,&quot;groundhoppingTool&quot;:&quot;Groundhopping-Tool&quot;,&quot;lastMatch&quot;:&quot;Letzte Begegnung&quot;,&quot;signin&quot;:&quot;Anmelden&quot;,&quot;login&quot;:&quot;Login&quot;,&quot;logOut&quot;:&quot;Abmelden&quot;,&quot;manageFavorites&quot;:&quot;Favoriten verwalten&quot;,&quot;marketValue&quot;:&quot;Marktwert&quot;,&quot;matchplan&quot;:&quot;Spielplan&quot;,&quot;messages&quot;:&quot;Nachrichten&quot;,&quot;myClub&quot;:&quot;Mein Verein&quot;,&quot;myClubText&quot;:&quot;Mit einem Transfermarkt-Account kannst du deinen Lieblingsverein hinterlegen und findest an dieser Stelle dann alle wichtigen Informationen zu deinem Verein (Spiele, News, Quick links).&quot;,&quot;myDreamTeam&quot;:&quot;Meine Traumelf&quot;,&quot;myFavorites&quot;:&quot;Meine Favoriten&quot;,&quot;myFavoritesText&quot;:&quot;Mit einem Transfermarkt-Account kannst du dir jede beliebige Seite als Favorit speichern und dann mit einem Klick erreichen.&quot;,&quot;myProfile&quot;:&quot;Mein Profil&quot;,&quot;news&quot;:&quot;News&quot;,&quot;newsAdministration&quot;:&quot;News-Administration&quot;,&quot;nextMatch&quot;:&quot;N\u00e4chste Begegnung&quot;,&quot;noNewNotifications&quot;:&quot;Keine neuen Benachrichtigungen&quot;,&quot;notifications&quot;:&quot;Benachrichtigungen&quot;,&quot;notificationsDeletedAutomatically&quot;:&quot;Hinweis: Notifications werden nach 30 Tagen automatisch gel\u00f6scht.&quot;,&quot;notifyDeleteMessage&quot;:&quot;Private Nachrichten, die \u00e4lter als 45 Tage sind, werden zuk\u00fcnftig von Zeit zu Zeit gel\u00f6scht.&quot;,&quot;or&quot;:&quot;oder&quot;,&quot;other&quot;:&quot;Sonstiges&quot;,&quot;overview&quot;:&quot;Zum Vereins-\u00dcberblick&quot;,&quot;password&quot;:&quot;Passwort&quot;,&quot;playerRatings&quot;:&quot;Spielernoten abgeben&quot;,&quot;playerWatchlist&quot;:&quot;Spieler-Watchlist&quot;,&quot;profile&quot;:&quot;Profil&quot;,&quot;progDebug&quot;:&quot;Prog. Debug&quot;,&quot;progProfile&quot;:&quot;Prog. Profile&quot;,&quot;registerNow&quot;:&quot;Jetzt kostenlos registrieren&quot;,&quot;rememberMe&quot;:&quot;Eingeloggt bleiben&quot;,&quot;removeFavorite&quot;:&quot;Favoriten entfernen&quot;,&quot;rumors&quot;:&quot;Ger\u00fcchte&quot;,&quot;schedule&quot;:&quot;Zum Spielplan&quot;,&quot;setting&quot;:&quot;Einstellungen&quot;,&quot;shortlink&quot;:&quot;Shortlink&quot;,&quot;shortLinkCreationError&quot;:&quot;An error occured creating the shortlink.&quot;,&quot;shortLinkHasBeenCreated&quot;:&quot;Shortlink has been created an was copied to your clipboard&quot;,&quot;shortLinkIsBeingCreated&quot;:&quot;Creating shortlink ...&quot;,&quot;showAllMessages&quot;:&quot;Alle Nachrichten anzeigen&quot;,&quot;totalMarketValue&quot;:&quot;Gesamtmarktwert&quot;,&quot;translation&quot;:&quot;Translation&quot;,&quot;username&quot;:&quot;Username&quot;,&quot;whyRegister&quot;:&quot;Warum registrieren?&quot;}' page-title="Die wertvollsten Fußball-Spieler | Transfermarkt" />
+                </div>
+            </div>
+        
+        
+                        <!-- mobile end -->
+            <nav class="main-navbar">
+                                    <a href="/" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/', 'News')">
+                        News                    </a>
+                                    <a href="/navigation/transfersundgeruechte" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/transfersundgeruechte', 'Transfers & Gerüchte')">
+                        Transfers & Gerüchte                    </a>
+                                    <a href="/navigation/marktwerte" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/marktwerte', 'Marktwerte')">
+                        Marktwerte                    </a>
+                                    <a href="/navigation/wettbewerbe" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/wettbewerbe', 'Wettbewerbe')">
+                        Wettbewerbe                    </a>
+                                    <a href="/navigation/statistiken" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/statistiken', 'Statistiken')">
+                        Statistiken                    </a>
+                                    <a href="/navigation/community" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/community', 'Community')">
+                        Community                    </a>
+                                    <a href="/navigation/gaming" class="main-navbar__lp-link " onclick="tmEvent('hauptnavi', '/navigation/gaming', 'Gaming')">
+                        Gaming                    </a>
+                                <div class="main-navbar__details">
+                    <div class="hamburger">
+                        <em></em>
+                    </div>
+                    <div class="dropdown-layer"></div>
+                    <div class="main-navbar__dropdown">
+                                                            <div class="recommendation">
+        
+    
+                            <div class="tm-discover__hero-container tm-discover__hero-container-grid tm-discover-container-grid">
+                    
+                                    <section class="tm-button-list__wrapper tm-button-list__wrapper--two-thirds  "><span class="tm-discover__h2">Empfehlungen</span><ul class="tm-button-list"><li><a
+                        href="/bundesliga/startseite/wettbewerb/L1"
+                        title="Bundesliga"
+                        target=""
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/bundesliga/startseite/wettbewerb/L1' , '1_1', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/l1.png?lm=1525905518"
+                            alt="Bundesliga"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li><li><a
+                        href="/2-bundesliga/startseite/wettbewerb/L2"
+                        title="2. Bundesliga"
+                        target=""
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/2-bundesliga/startseite/wettbewerb/L2' , '1_2', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/l2.png?lm=1525905553"
+                            alt="2. Bundesliga"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li><li><a
+                        href="/3-liga/startseite/wettbewerb/L3"
+                        title="3. Liga"
+                        target=""
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/3-liga/startseite/wettbewerb/L3' , '1_3', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/l3.png?lm=1569702802"
+                            alt="3. Liga"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li><li><a
+                        href="/uefa-champions-league/startseite/pokalwettbewerb/CL"
+                        title="UEFA Champions League"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/uefa-champions-league/startseite/pokalwettbewerb/CL' , '1_4', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/cl.png?lm=1626810555"
+                            alt="UEFA Champions League"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li><li><a
+                        href="/premier-league/startseite/wettbewerb/GB1"
+                        title="Premier League"
+                        target=""
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/premier-league/startseite/wettbewerb/GB1' , '1_5', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/gb1.png?lm=1521104656"
+                            alt="Premier League"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li><li><a
+                        href="/super-lig/startseite/wettbewerb/TR1"
+                        title="Süper Lig"
+                        target=""
+                        class="tm-button-list__list-item tm-button-list__list-item--big "
+                        onclick="tmEvent('recommendations_recommendation', '/super-lig/startseite/wettbewerb/TR1' , '1_6', 'buttonList');"
+                    ><img
+                            src="https://tmssl.akamaized.net//images/logo/homepageWappen150x150/tr1.png?lm=1723019495"
+                            alt="Süper Lig"
+                            class="tm-button-list__image tm-button-list__image--big 1"
+                            width="54"
+                            height="36"
+                        ></a></li></ul></section>
+                                                                                
+        
+    
+                
+                                    <section class="tm-button-list__wrapper tm-button-list__wrapper--one-third  tm-button-list__desktop"><span class="tm-discover__h2">Für Spielerberater</span><ul class="tm-button-list"><li><a
+                        href="/agent-support/beraterIndex/berater"
+                        title="Berater-Support"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/agent-support/beraterIndex/berater' , '2_1', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/agent-support.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Berater-<br>Support</a></li><li><a
+                        href="/berater/beraterfirmenuebersicht/berater"
+                        title="Berater-Firmen"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/berater/beraterfirmenuebersicht/berater' , '2_2', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/agent-statistic.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Berater-<br>Firmen</a></li><li><a
+                        href="/premium-service/berater"
+                        title="Premium Service"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/premium-service/berater' , '2_3', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/premium-service.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Premium<br>Service</a></li></ul></section>
+                                                                                
+        
+    
+                
+                                            
+<section class="tm-link-list-container tm-link-list--full ">
+        <div
+        class="tm-link-list-element"
+        role="navigation"
+        aria-label=""
+    >
+                    
+                        
+                                            <ul
+    class="tm-link-list-unordered   recommendation__links"
+>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/statistik/neuestetransfers"
+                    title="Neueste Transfers"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/statistik/neuestetransfers' , '3_1','linkList');"
+                >
+                    Neueste Transfers
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/geruchtekuche/detail/forum/154"
+                    title="Gerüchteküche"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/geruchtekuche/detail/forum/154' , '3_2','linkList');"
+                >
+                    Gerüchteküche
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/marktwertanalyse/detail/forum/67"
+                    title="Marktwert-Analyse"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/marktwertanalyse/detail/forum/67' , '3_3','linkList');"
+                >
+                    Marktwert-Analyse
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/aktuell/newsarchiv"
+                    title="Alle News"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/aktuell/newsarchiv' , '3_4','linkList');"
+                >
+                    Alle News
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/uebersicht/index/forum"
+                    title="Alle Foren"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/uebersicht/index/forum' , '3_5','linkList');"
+                >
+                    Alle Foren
+                </a>
+                    </li>
+    </ul>
+                                            <ul
+    class="tm-link-list-unordered   recommendation__links"
+>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/vereinsforen-1-liga/index/forum/3"
+                    title="Vereinsforen Bundesliga"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/vereinsforen-1-liga/index/forum/3' , '3_6','linkList');"
+                >
+                    Vereinsforen Bundesliga
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/vereinsforen-2-liga/index/forum/4"
+                    title="Vereinsforen 2. Bundesliga"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/vereinsforen-2-liga/index/forum/4' , '3_7','linkList');"
+                >
+                    Vereinsforen 2. Bundesliga
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/vereinsforen-3-liga/index/forum/158"
+                    title="Vereinsforen 3. Liga"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/vereinsforen-3-liga/index/forum/158' , '3_8','linkList');"
+                >
+                    Vereinsforen 3. Liga
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/spieler-statistik/wertvollstespieler/marktwertetop"
+                    title="Wertvollste Spieler der Welt"
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/spieler-statistik/wertvollstespieler/marktwertetop' , '3_9','linkList');"
+                >
+                    Wertvollste Spieler der Welt
+                </a>
+                    </li>
+            <li
+            class="tm-link-list-item"
+        >
+                            <a
+                    class="tm-link__arrow  "
+                    href="/whatsMyValue"
+                    title="Marktwert-Spiel "What's my value?""
+                    target="_self"
+                    onclick="tmEvent('recommendations_recommendation', '/whatsMyValue' , '3_10','linkList');"
+                >
+                    Marktwert-Spiel "What's my value?"
+                </a>
+                    </li>
+    </ul>
+                        </div>
+
+    </section>
+                                                                        
+        
+    
+                
+                                    <section class="tm-button-list__wrapper tm-button-list__wrapper--full  tm-button-list__mobile"><span class="tm-discover__h2">Für Spielerberater</span><ul class="tm-button-list"><li><a
+                        href="/agent-support/beraterIndex/berater"
+                        title="Berater-Support"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/agent-support/beraterIndex/berater' , '4_1', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/agent-support.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Berater-<br>Support</a></li><li><a
+                        href="/berater/beraterfirmenuebersicht/berater"
+                        title="Berater-Firmen"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/berater/beraterfirmenuebersicht/berater' , '4_2', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/agent-statistic.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Berater-<br>Firmen</a></li><li><a
+                        href="/premium-service/berater"
+                        title="Premium Service"
+                        target="_self"
+                        class="tm-button-list__list-item tm-button-list__list-item--big tm-button-list__agent"
+                        onclick="tmEvent('recommendations_recommendation', '/premium-service/berater' , '4_3', 'buttonList');"
+                    ><img
+                            src="https://tmsi.akamaized.net/rebrush/navigation/premium-service.webp"
+                            alt=""
+                            class="tm-button-list__image tm-button-list__image--big tm-button-list__image--country tm-button-list__image--border"
+                            width="54"
+                            height="36"
+                        >Premium<br>Service</a></li></ul></section>
+                                                                                
+                    </div>
+        
+    </div>
+                                                </div>
+                </div>
+            </nav>
+
+            <div class="quick-select-wrapper">
+    
+    <tm-quick-select defaultCountry="40" defaultCompetition="" defaultClub="" defaultPlayer="" dropdown-visible="" translations='{"home":"Home","country":"Land","competition":"Wettbewerb","club":"Verein","player":"Spieler","attack":"Sturm","midfield":"Mittelfeld","defense":"Abwehr","goalkeeper":"Torwart"}'>
+    </tm-quick-select>
+</div>
+
+            
+        
+        <script type="text/javascript">//H3IXPRY("billboard")</script>
+<div class="werbung ad-placement-note werbung-billboard" data-ad-placement-note="Werbung">
+  <div id="superbanner"></div>
+</div>
+
+<span class="H3IXPRY_end"></span>
+
+
+        
+        <main id="tm-main">
+            <div class="row" id="wertvollstespieler">
+    <div class="large-8 columns">
+        <div class="box">
+            <h1 class="content-box-headline">
+                Die wertvollsten Spieler der Welt            </h1>
+            <a class="button dropdown toggler statistik-toggler dnu hide-for-small" data-toggle="statistik-infoblock"></a>
+            <div id="statistik-infoblock">
+                <p class="info-content">
+                    Diese Statistik listet die 250 wertvollsten Fußball-Spieler der Welt. Die Ansicht kann nach Positionen, Hauptpositionen, Altersklassen und Nationalitäten weiter angepasst werden. Zudem enthält die Übersicht die wichtigsten Spielerstatistiken wie etwa Einsätze, Tore und Karten. Hinweis: Die Position wird von der Hauptposition überschrieben.                </p>
+                <div class="content">
+                    <form action="/spieler-statistik/wertvollstespieler/marktwertetop/plus/0/galerie/0" method="get">                    <div class="row">
+                        <div class="large-12 columns">
+                            <table class="auflistung">
+                                <tbody>
+                                    <tr>
+                                        <td>Position:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="ausrichtung" data-placeholder="" class="chzn-select" tabindex="0">
+                                                                                                            <option selected="selected" value="alle">Alle</option>
+                                                                                                            <option  value="Torwart">Torwart</option>
+                                                                                                            <option  value="Abwehr">Abwehr</option>
+                                                                                                            <option  value="Mittelfeld">Mittelfeld</option>
+                                                                                                            <option  value="Sturm">Sturm</option>
+                                                                                                    </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Detailposition:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="spielerposition_id" data-placeholder="" class="chzn-select" tabindex="0">
+                                                    <option value="alle">Alle</option>
+                                                                                                            <option  value="1">Torwart</option>
+                                                                                                                <option  value="2">Libero</option>
+                                                                                                                <option  value="3">Innenverteidiger</option>
+                                                                                                                <option  value="4">Linker Verteidiger</option>
+                                                                                                                <option  value="5">Rechter Verteidiger</option>
+                                                                                                                    <option  value="98">Außenverteidiger</option>
+                                                                                                                <option  value="6">Defensives Mittelfeld</option>
+                                                                                                                <option  value="7">Zentrales Mittelfeld</option>
+                                                                                                                <option  value="8">Rechtes Mittelfeld</option>
+                                                                                                                <option  value="9">Linkes Mittelfeld</option>
+                                                                                                                <option  value="10">Offensives Mittelfeld</option>
+                                                                                                                <option  value="11">Linksaußen</option>
+                                                                                                                <option  value="12">Rechtsaußen</option>
+                                                                                                                    <option  value="99">Flügelstürmer</option>
+                                                                                                            <option  value="13">Hängende Spitze</option>
+                                                                                                                <option  value="14">Mittelstürmer</option>
+                                                                                                        </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Altersklasse:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="altersklasse" data-placeholder="" class="chzn-select" tabindex="0">
+                                                                                                            <option selected="selected" value="alle">Alle</option>
+                                                                                                            <option  value="u17">u17</option>
+                                                                                                            <option  value="u18">u18</option>
+                                                                                                            <option  value="u19">u19</option>
+                                                                                                            <option  value="u20">u20</option>
+                                                                                                            <option  value="u21">u21</option>
+                                                                                                            <option  value="u23">u23</option>
+                                                                                                            <option  value="23-30">23-30</option>
+                                                                                                            <option  value="o30">o30</option>
+                                                                                                            <option  value="o32">o32</option>
+                                                                                                            <option  value="o34">o34</option>
+                                                                                                    </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jahrgang:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="jahrgang" data-placeholder="" class="chzn-select" tabindex="0">
+                                                    <option value="0">Alle</option>
+                                                                                                            <option  value="2009">2009</option>
+                                                                                                            <option  value="2008">2008</option>
+                                                                                                            <option  value="2007">2007</option>
+                                                                                                            <option  value="2006">2006</option>
+                                                                                                            <option  value="2005">2005</option>
+                                                                                                            <option  value="2004">2004</option>
+                                                                                                            <option  value="2003">2003</option>
+                                                                                                            <option  value="2002">2002</option>
+                                                                                                            <option  value="2001">2001</option>
+                                                                                                            <option  value="2000">2000</option>
+                                                                                                            <option  value="1999">1999</option>
+                                                                                                            <option  value="1998">1998</option>
+                                                                                                            <option  value="1997">1997</option>
+                                                                                                            <option  value="1996">1996</option>
+                                                                                                            <option  value="1995">1995</option>
+                                                                                                            <option  value="1994">1994</option>
+                                                                                                            <option  value="1993">1993</option>
+                                                                                                            <option  value="1992">1992</option>
+                                                                                                            <option  value="1991">1991</option>
+                                                                                                            <option  value="1990">1990</option>
+                                                                                                            <option  value="1989">1989</option>
+                                                                                                            <option  value="1988">1988</option>
+                                                                                                            <option  value="1987">1987</option>
+                                                                                                            <option  value="1986">1986</option>
+                                                                                                            <option  value="1985">1985</option>
+                                                                                                            <option  value="1984">1984</option>
+                                                                                                            <option  value="1983">1983</option>
+                                                                                                            <option  value="1982">1982</option>
+                                                                                                            <option  value="1981">1981</option>
+                                                                                                            <option  value="1980">1980</option>
+                                                                                                            <option  value="1967">1967</option>
+                                                                                                    </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nationalität:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="land_id" data-placeholder="" class="chzn-select" tabindex="0">
+                                                    <option value="0">Alle</option>
+                                                                                                            <option  value="1">Afghanistan</option>
+                                                                                                            <option  value="2">Ägypten</option>
+                                                                                                            <option  value="3">Albanien</option>
+                                                                                                            <option  value="4">Algerien</option>
+                                                                                                            <option  value="239">Amerikanisch-Samoa</option>
+                                                                                                            <option  value="234">Amerikanische Jungferninseln</option>
+                                                                                                            <option  value="5">Andorra</option>
+                                                                                                            <option  value="6">Angola</option>
+                                                                                                            <option  value="232">Anguilla</option>
+                                                                                                            <option  value="7">Antigua und Barbuda</option>
+                                                                                                            <option  value="8">Äquatorialguinea</option>
+                                                                                                            <option  value="9">Argentinien</option>
+                                                                                                            <option  value="10">Armenien</option>
+                                                                                                            <option  value="233">Aruba</option>
+                                                                                                            <option  value="13">Aserbaidschan</option>
+                                                                                                            <option  value="11">Äthiopien</option>
+                                                                                                            <option  value="12">Australien</option>
+                                                                                                            <option  value="14">Bahamas</option>
+                                                                                                            <option  value="15">Bahrain</option>
+                                                                                                            <option  value="16">Bangladesch</option>
+                                                                                                            <option  value="17">Barbados</option>
+                                                                                                            <option  value="18">Belarus</option>
+                                                                                                            <option  value="19">Belgien</option>
+                                                                                                            <option  value="20">Belize</option>
+                                                                                                            <option  value="21">Benin</option>
+                                                                                                            <option  value="211">Bermuda</option>
+                                                                                                            <option  value="22">Bhutan</option>
+                                                                                                            <option  value="23">Bolivien</option>
+                                                                                                            <option  value="269">Bonaire</option>
+                                                                                                            <option  value="24">Bosnien-Herzegowina</option>
+                                                                                                            <option  value="25">Botsuana</option>
+                                                                                                            <option  value="26">Brasilien</option>
+                                                                                                            <option  value="276">Britisch-Indien</option>
+                                                                                                            <option  value="231">Britische Jungferninseln</option>
+                                                                                                            <option  value="27">Brunei Darussalam</option>
+                                                                                                            <option  value="28">Bulgarien</option>
+                                                                                                            <option  value="29">Burkina Faso</option>
+                                                                                                            <option  value="30">Burundi</option>
+                                                                                                            <option  value="229">Cayman-Inseln</option>
+                                                                                                            <option  value="33">Chile</option>
+                                                                                                            <option  value="34">China</option>
+                                                                                                            <option  value="164">Chinese Taipei</option>
+                                                                                                            <option  value="238">Cookinseln</option>
+                                                                                                            <option  value="36">Costa Rica</option>
+                                                                                                            <option  value="220">CSSR</option>
+                                                                                                            <option  value="260">Curacao</option>
+                                                                                                            <option  value="39">Dänemark</option>
+                                                                                                            <option  value="222">DDR</option>
+                                                                                                            <option  value="40">Deutschland</option>
+                                                                                                            <option  value="42">Dominica</option>
+                                                                                                            <option  value="43">Dominikanische Republik</option>
+                                                                                                            <option  value="193">DR Kongo</option>
+                                                                                                            <option  value="41">Dschibuti</option>
+                                                                                                            <option  value="44">Ecuador</option>
+                                                                                                            <option  value="45">El Salvador</option>
+                                                                                                            <option  value="38">Elfenbeinküste</option>
+                                                                                                            <option  value="189">England</option>
+                                                                                                            <option  value="46">Eritrea</option>
+                                                                                                            <option  value="47">Estland</option>
+                                                                                                            <option  value="162">Eswatini</option>
+                                                                                                            <option  value="250">Falklandinseln</option>
+                                                                                                            <option  value="208">Färöer</option>
+                                                                                                            <option  value="48">Fidschi</option>
+                                                                                                            <option  value="49">Finnland</option>
+                                                                                                            <option  value="50">Frankreich</option>
+                                                                                                            <option  value="252">Französisch-Guayana</option>
+                                                                                                            <option  value="51">Gabun</option>
+                                                                                                            <option  value="52">Gambia</option>
+                                                                                                            <option  value="53">Georgien</option>
+                                                                                                            <option  value="54">Ghana</option>
+                                                                                                            <option  value="266">Gibraltar</option>
+                                                                                                            <option  value="55">Grenada</option>
+                                                                                                            <option  value="56">Griechenland</option>
+                                                                                                            <option  value="243">Grönland</option>
+                                                                                                            <option  value="251">Guadeloupe</option>
+                                                                                                            <option  value="241">Guam</option>
+                                                                                                            <option  value="58">Guatemala</option>
+                                                                                                            <option  value="271">Guernsey</option>
+                                                                                                            <option  value="59">Guinea</option>
+                                                                                                            <option  value="60">Guinea-Bissau</option>
+                                                                                                            <option  value="61">Guyana</option>
+                                                                                                            <option  value="62">Haiti</option>
+                                                                                                            <option  value="66">Honduras</option>
+                                                                                                            <option  value="218">Hongkong</option>
+                                                                                                            <option  value="67">Indien</option>
+                                                                                                            <option  value="68">Indonesien</option>
+                                                                                                            <option  value="70">Irak</option>
+                                                                                                            <option  value="71">Iran</option>
+                                                                                                            <option  value="72">Irland</option>
+                                                                                                            <option  value="73">Island</option>
+                                                                                                            <option  value="270">Isle of Man</option>
+                                                                                                            <option  value="74">Israel</option>
+                                                                                                            <option  value="75">Italien</option>
+                                                                                                            <option  value="76">Jamaika</option>
+                                                                                                            <option  value="77">Japan</option>
+                                                                                                            <option  value="186">Jemen</option>
+                                                                                                            <option  value="272">Jersey</option>
+                                                                                                            <option  value="78">Jordanien</option>
+                                                                                                            <option  value="258">Jugoslawien (Bundesrepublik)</option>
+                                                                                                            <option  value="223">Jugoslawien (SFR)</option>
+                                                                                                            <option  value="79">Kambodscha</option>
+                                                                                                            <option  value="31">Kamerun</option>
+                                                                                                            <option  value="80">Kanada</option>
+                                                                                                            <option  value="32">Kap Verde</option>
+                                                                                                            <option  value="81">Kasachstan</option>
+                                                                                                            <option  value="137">Katar</option>
+                                                                                                            <option  value="82">Kenia</option>
+                                                                                                            <option  value="90">Kirgisistan</option>
+                                                                                                            <option  value="246">Kiribati</option>
+                                                                                                            <option  value="83">Kolumbien</option>
+                                                                                                            <option  value="35">Komoren</option>
+                                                                                                            <option  value="85">Kongo</option>
+                                                                                                            <option  value="244">Kosovo</option>
+                                                                                                            <option  value="278">Krim</option>
+                                                                                                            <option  value="37">Kroatien</option>
+                                                                                                            <option  value="88">Kuba</option>
+                                                                                                            <option  value="89">Kuwait</option>
+                                                                                                            <option  value="91">Laos</option>
+                                                                                                            <option  value="93">Lesotho</option>
+                                                                                                            <option  value="92">Lettland</option>
+                                                                                                            <option  value="94">Libanon</option>
+                                                                                                            <option  value="95">Liberia</option>
+                                                                                                            <option  value="96">Libyen</option>
+                                                                                                            <option  value="97">Liechtenstein</option>
+                                                                                                            <option  value="98">Litauen</option>
+                                                                                                            <option  value="99">Luxemburg</option>
+                                                                                                            <option  value="219">Macau</option>
+                                                                                                            <option  value="101">Madagaskar</option>
+                                                                                                            <option  value="102">Malawi</option>
+                                                                                                            <option  value="103">Malaysia</option>
+                                                                                                            <option  value="104">Malediven</option>
+                                                                                                            <option  value="105">Mali</option>
+                                                                                                            <option  value="106">Malta</option>
+                                                                                                            <option  value="107">Marokko</option>
+                                                                                                            <option  value="257">Marshallinseln</option>
+                                                                                                            <option  value="207">Martinique</option>
+                                                                                                            <option  value="108">Mauretanien</option>
+                                                                                                            <option  value="109">Mauritius</option>
+                                                                                                            <option  value="277">Mayotte</option>
+                                                                                                            <option  value="274">Mazedonien</option>
+                                                                                                            <option  value="110">Mexiko</option>
+                                                                                                            <option  value="111">Mikronesien</option>
+                                                                                                            <option  value="112">Moldawien</option>
+                                                                                                            <option  value="113">Monaco</option>
+                                                                                                            <option  value="114">Mongolei</option>
+                                                                                                            <option  value="216">Montenegro</option>
+                                                                                                            <option  value="235">Montserrat</option>
+                                                                                                            <option  value="115">Mosambik</option>
+                                                                                                            <option  value="116">Myanmar</option>
+                                                                                                            <option  value="117">Namibia</option>
+                                                                                                            <option  value="118">Nauru</option>
+                                                                                                            <option  value="119">Nepal</option>
+                                                                                                            <option  value="236">Neukaledonien</option>
+                                                                                                            <option  value="120">Neuseeland</option>
+                                                                                                            <option  value="121">Nicaragua</option>
+                                                                                                            <option  value="122">Niederlande</option>
+                                                                                                            <option  value="255">Niederländisch Ostindien</option>
+                                                                                                            <option  value="227">Niederländische Antillen</option>
+                                                                                                            <option  value="123">Niger</option>
+                                                                                                            <option  value="124">Nigeria</option>
+                                                                                                            <option  value="261">Niue</option>
+                                                                                                            <option  value="192">Nordirland</option>
+                                                                                                            <option  value="86">Nordkorea</option>
+                                                                                                            <option  value="268">Nördliche Marianen</option>
+                                                                                                            <option  value="100">Nordmazedonien</option>
+                                                                                                            <option  value="125">Norwegen</option>
+                                                                                                            <option  value="126">Oman</option>
+                                                                                                            <option  value="127">Österreich</option>
+                                                                                                            <option  value="128">Pakistan</option>
+                                                                                                            <option  value="240">Palästina</option>
+                                                                                                            <option  value="129">Palau</option>
+                                                                                                            <option  value="130">Panama</option>
+                                                                                                            <option  value="131">Papua-Neuguinea</option>
+                                                                                                            <option  value="132">Paraguay</option>
+                                                                                                            <option  value="133">Peru</option>
+                                                                                                            <option  value="134">Philippinen</option>
+                                                                                                            <option  value="135">Polen</option>
+                                                                                                            <option  value="136">Portugal</option>
+                                                                                                            <option  value="228">Puerto Rico</option>
+                                                                                                            <option  value="249">Réunion</option>
+                                                                                                            <option  value="139">Ruanda</option>
+                                                                                                            <option  value="140">Rumänien</option>
+                                                                                                            <option  value="141">Russland</option>
+                                                                                                            <option  value="263">Saarland</option>
+                                                                                                            <option  value="267">Saint-Martin</option>
+                                                                                                            <option  value="69">Salomon-Inseln</option>
+                                                                                                            <option  value="142">Sambia</option>
+                                                                                                            <option  value="143">Samoa</option>
+                                                                                                            <option  value="144">San Marino</option>
+                                                                                                            <option  value="253">Sansibar</option>
+                                                                                                            <option  value="145">Sao Tome und Principe</option>
+                                                                                                            <option  value="146">Saudi-Arabien</option>
+                                                                                                            <option  value="190">Schottland</option>
+                                                                                                            <option  value="147">Schweden</option>
+                                                                                                            <option  value="148">Schweiz</option>
+                                                                                                            <option  value="149">Senegal</option>
+                                                                                                            <option  value="215">Serbien</option>
+                                                                                                            <option  value="150">Serbien und Montenegro</option>
+                                                                                                            <option  value="151">Seychellen</option>
+                                                                                                            <option  value="152">Sierra Leone</option>
+                                                                                                            <option  value="187">Simbabwe</option>
+                                                                                                            <option  value="153">Singapur</option>
+                                                                                                            <option  value="265">Sint Maarten</option>
+                                                                                                            <option  value="154">Slowakei</option>
+                                                                                                            <option  value="155">Slowenien</option>
+                                                                                                            <option  value="156">Somalia</option>
+                                                                                                            <option  value="157">Spanien</option>
+                                                                                                            <option  value="158">Sri Lanka</option>
+                                                                                                            <option  value="225">St. Kitts und Nevis</option>
+                                                                                                            <option  value="230">St. Lucia</option>
+                                                                                                            <option  value="224">St. Vincent und die Grenadinen</option>
+                                                                                                            <option  value="159">Südafrika</option>
+                                                                                                            <option  value="160">Sudan</option>
+                                                                                                            <option  value="87">Südkorea</option>
+                                                                                                            <option  value="262">Südsudan</option>
+                                                                                                            <option  value="161">Suriname</option>
+                                                                                                            <option  value="273">Swasiland</option>
+                                                                                                            <option  value="163">Syrien</option>
+                                                                                                            <option  value="165">Tadschikistan</option>
+                                                                                                            <option  value="237">Tahiti</option>
+                                                                                                            <option  value="166">Tansania</option>
+                                                                                                            <option  value="167">Thailand</option>
+                                                                                                            <option  value="245">Tibet</option>
+                                                                                                            <option  value="242">Timor-Leste</option>
+                                                                                                            <option  value="168">Togo</option>
+                                                                                                            <option  value="169">Tonga</option>
+                                                                                                            <option  value="170">Trinidad und Tobago</option>
+                                                                                                            <option  value="171">Tschad</option>
+                                                                                                            <option  value="172">Tschechien</option>
+                                                                                                            <option  value="173">Tunesien</option>
+                                                                                                            <option  value="174">Türkei</option>
+                                                                                                            <option  value="175">Turkmenistan</option>
+                                                                                                            <option  value="226">Turks- und Caicosinseln</option>
+                                                                                                            <option  value="247">Tuvalu</option>
+                                                                                                            <option  value="221">UdSSR</option>
+                                                                                                            <option  value="176">Uganda</option>
+                                                                                                            <option  value="177">Ukraine</option>
+                                                                                                            <option  value="178">Ungarn</option>
+                                                                                                            <option  value="179">Uruguay</option>
+                                                                                                            <option  value="180">Usbekistan</option>
+                                                                                                            <option  value="181">Vanuatu</option>
+                                                                                                            <option  value="256">Vatikanstadt</option>
+                                                                                                            <option  value="182">Venezuela</option>
+                                                                                                            <option  value="183">Vereinigte Arabische Emirate</option>
+                                                                                                            <option  value="184">Vereinigte Staaten</option>
+                                                                                                            <option  value="264">Vereinigtes Königreich</option>
+                                                                                                            <option  value="185">Vietnam</option>
+                                                                                                            <option  value="259">Volksrepublik Kongo</option>
+                                                                                                            <option  value="191">Wales</option>
+                                                                                                            <option  value="248">Weihnachtsinsel</option>
+                                                                                                            <option  value="275">Westsahara</option>
+                                                                                                            <option  value="254">Zaire</option>
+                                                                                                            <option  value="138">Zentralafrikanische Republik</option>
+                                                                                                            <option  value="188">Zypern</option>
+                                                                                                    </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Konföderation:</td>
+                                        <td>
+                                            <div class="inline-select">
+                                                <select name="kontinent_id" data-placeholder="" class="chzn-select" tabindex="0">
+                                                    <option value="0">Weltweit</option>
+                                                                                                            <option  value="1">AFC</option>
+                                                                                                            <option  value="2">CAF</option>
+                                                                                                            <option  value="3">CONCACAF</option>
+                                                                                                            <option  value="4">CONMEBOL</option>
+                                                                                                            <option  value="5">OFC</option>
+                                                                                                            <option  value="6">UEFA</option>
+                                                                                                    </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td>
+                                            <input class="right small button" type="submit" name="yt0" value="Anzeigen" />                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    </form>                </div>
+            </div>
+            
+<div class="tm-tabs">
+    <a class="tm-tab tm-tab__active--parent" href="/spieler-statistik/wertvollstespieler/marktwertetop?land_id=0&amp;ausrichtung=alle&amp;spielerposition_id=alle&amp;altersklasse=alle&amp;jahrgang=0&amp;kontinent_id=0"><div class=" tm-tab__active"><span>Kompakt</span></div></a><a class="tm-tab" href="/spieler-statistik/wertvollstespieler/marktwertetop?land_id=0&amp;ausrichtung=alle&amp;spielerposition_id=alle&amp;altersklasse=alle&amp;jahrgang=0&amp;kontinent_id=0&amp;plus=1"><div class=""><span>Erweitert</span></div></a><a class="tm-tab" href="/spieler-statistik/wertvollstespieler/marktwertetop?land_id=0&amp;ausrichtung=alle&amp;spielerposition_id=alle&amp;altersklasse=alle&amp;jahrgang=0&amp;kontinent_id=0&amp;galerie=1"><div class=""><span>Galerie</span></div></a></div>
+            <div class="responsive-table">
+                <div id="yw1" class="grid-view">
+<div class="summary"></div>
+<table class="items">
+<thead>
+<tr>
+<th class="zentriert" id="yw1_c0">#</th><th class="" id="yw1_c1">Spieler</th><th class="zentriert" id="yw1_c2">Alter</th><th class="zentriert" id="yw1_c3">Nat.</th><th class="zentriert" id="yw1_c4">Verein</th><th class="rechts" id="yw1_c5">Marktwert</th></tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="zentriert">1</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/418560-1709108116.png?lm=1" title="Erling Haaland" alt="Erling Haaland" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Erling Haaland" href="/erling-haaland/profil/spieler/418560">Erling Haaland</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">24</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/125.png?lm=1520611569" title="Norwegen" alt="Norwegen" class="flaggenrahmen" /></td><td class="zentriert"><a title="Manchester City" href="/manchester-city/startseite/verein/281"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/281.png?lm=1467356331" title="Manchester City" alt="Manchester City" class="" /></a></td><td class="rechts hauptlink"><a href="/erling-haaland/marktwertverlauf/spieler/418560">200,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">2</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/371998-1664869583.jpg?lm=1" title="Vinicius Junior" alt="Vinicius Junior" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Vinicius Junior" href="/vinicius-junior/profil/spieler/371998">Vinicius Junior</a></td></tr><tr><td>Linksaußen</td></tr></table></td><td class="zentriert">24</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/26.png?lm=1520611569" title="Brasilien" alt="Brasilien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Real Madrid" href="/real-madrid/startseite/verein/418"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/418.png?lm=1729684474" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/vinicius-junior/marktwertverlauf/spieler/371998">200,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">3</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/937958-1745911454.jpg?lm=1" title="Lamine Yamal" alt="Lamine Yamal" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Lamine Yamal" href="/lamine-yamal/profil/spieler/937958">Lamine Yamal</a></td></tr><tr><td>Rechtsaußen</td></tr></table></td><td class="zentriert">17</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/8.png?lm=1520611569" title="Äquatorialguinea" alt="Äquatorialguinea" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Barcelona" href="/fc-barcelona/startseite/verein/131"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/131.png?lm=1406739548" title="FC Barcelona" alt="FC Barcelona" class="" /></a></td><td class="rechts hauptlink"><a href="/lamine-yamal/marktwertverlauf/spieler/937958">180,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">4</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/581678-1693987944.jpg?lm=1" title="Jude Bellingham" alt="Jude Bellingham" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Jude Bellingham" href="/jude-bellingham/profil/spieler/581678">Jude Bellingham</a></td></tr><tr><td>Offensives Mittelfeld</td></tr></table></td><td class="zentriert">21</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/72.png?lm=1520611569" title="Irland" alt="Irland" class="flaggenrahmen" /></td><td class="zentriert"><a title="Real Madrid" href="/real-madrid/startseite/verein/418"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/418.png?lm=1729684474" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/jude-bellingham/marktwertverlauf/spieler/581678">180,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">5</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/342229-1682683695.jpg?lm=1" title="Kylian Mbappé" alt="Kylian Mbappé" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Kylian Mbappé" href="/kylian-mbappe/profil/spieler/342229">Kylian Mbappé</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">26</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/50.png?lm=1520611569" title="Frankreich" alt="Frankreich" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/31.png?lm=1520611569" title="Kamerun" alt="Kamerun" class="flaggenrahmen" /></td><td class="zentriert"><a title="Real Madrid" href="/real-madrid/startseite/verein/418"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/418.png?lm=1729684474" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/kylian-mbappe/marktwertverlauf/spieler/342229">170,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">6</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/433177-1684155052.jpg?lm=1" title="Bukayo Saka" alt="Bukayo Saka" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Bukayo Saka" href="/bukayo-saka/profil/spieler/433177">Bukayo Saka</a></td></tr><tr><td>Rechtsaußen</td></tr></table></td><td class="zentriert">23</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/124.png?lm=1520611569" title="Nigeria" alt="Nigeria" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Arsenal" href="/fc-arsenal/startseite/verein/11"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/11.png?lm=1489787850" title="FC Arsenal" alt="FC Arsenal" class="" /></a></td><td class="rechts hauptlink"><a href="/bukayo-saka/marktwertverlauf/spieler/433177">150,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">7</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/598577-1689710503.jpg?lm=1" title="Florian Wirtz" alt="Florian Wirtz" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Florian Wirtz" href="/florian-wirtz/profil/spieler/598577">Florian Wirtz</a></td></tr><tr><td>Offensives Mittelfeld</td></tr></table></td><td class="zentriert">22</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/40.png?lm=1520612525" title="Deutschland" alt="Deutschland" class="flaggenrahmen" /></td><td class="zentriert"><a title="Bayer 04 Leverkusen" href="/bayer-04-leverkusen/startseite/verein/15"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/15.png?lm=1710156317" title="Bayer 04 Leverkusen" alt="Bayer 04 Leverkusen" class="" /></a></td><td class="rechts hauptlink"><a href="/florian-wirtz/marktwertverlauf/spieler/598577">140,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">8</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/580195-1711745441.jpg?lm=1" title="Jamal Musiala" alt="Jamal Musiala" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Jamal Musiala" href="/jamal-musiala/profil/spieler/580195">Jamal Musiala</a></td></tr><tr><td>Offensives Mittelfeld</td></tr></table></td><td class="zentriert">22</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/40.png?lm=1520612525" title="Deutschland" alt="Deutschland" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Bayern München" href="/fc-bayern-munchen/startseite/verein/27"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/27.png?lm=1729503608" title="FC Bayern München" alt="FC Bayern München" class="" /></a></td><td class="rechts hauptlink"><a href="/jamal-musiala/marktwertverlauf/spieler/580195">140,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">9</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/568177-1712320986.jpg?lm=1" title="Cole Palmer" alt="Cole Palmer" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Cole Palmer" href="/cole-palmer/profil/spieler/568177">Cole Palmer</a></td></tr><tr><td>Offensives Mittelfeld</td></tr></table></td><td class="zentriert">22</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Chelsea" href="/fc-chelsea/startseite/verein/631"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/631.png?lm=1682435911" title="FC Chelsea" alt="FC Chelsea" class="" /></a></td><td class="rechts hauptlink"><a href="/cole-palmer/marktwertverlauf/spieler/568177">130,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">10</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/406635-1668524492.jpg?lm=1" title="Phil Foden" alt="Phil Foden" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Phil Foden" href="/phil-foden/profil/spieler/406635">Phil Foden</a></td></tr><tr><td>Rechtsaußen</td></tr></table></td><td class="zentriert">24</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></td><td class="zentriert"><a title="Manchester City" href="/manchester-city/startseite/verein/281"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/281.png?lm=1467356331" title="Manchester City" alt="Manchester City" class="" /></a></td><td class="rechts hauptlink"><a href="/phil-foden/marktwertverlauf/spieler/406635">130,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">11</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/369081-1731018042.jpg?lm=1" title="Federico Valverde" alt="Federico Valverde" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Federico Valverde" href="/federico-valverde/profil/spieler/369081">Federico Valverde</a></td></tr><tr><td>Zentrales Mittelfeld</td></tr></table></td><td class="zentriert">26</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/179.png?lm=1520611569" title="Uruguay" alt="Uruguay" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Real Madrid" href="/real-madrid/startseite/verein/418"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/418.png?lm=1729684474" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/federico-valverde/marktwertverlauf/spieler/369081">130,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">12</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/357565-1682587890.jpg?lm=1" title="Rodri" alt="Rodri" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Rodri" href="/rodri/profil/spieler/357565">Rodri</a></td></tr><tr><td>Defensives Mittelfeld</td></tr></table></td><td class="zentriert">28</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Manchester City" href="/manchester-city/startseite/verein/281"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/281.png?lm=1467356331" title="Manchester City" alt="Manchester City" class="" /></a></td><td class="rechts hauptlink"><a href="/rodri/marktwertverlauf/spieler/357565">130,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">13</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/683840-1744278342.jpg?lm=1" title="Pedri" alt="Pedri" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Pedri" href="/pedri/profil/spieler/683840">Pedri</a></td></tr><tr><td>Zentrales Mittelfeld</td></tr></table></td><td class="zentriert">22</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Barcelona" href="/fc-barcelona/startseite/verein/131"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/131.png?lm=1406739548" title="FC Barcelona" alt="FC Barcelona" class="" /></a></td><td class="rechts hauptlink"><a href="/pedri/marktwertverlauf/spieler/683840">120,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">14</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/357662-1687962936.jpg?lm=1" title="Declan Rice" alt="Declan Rice" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Declan Rice" href="/declan-rice/profil/spieler/357662">Declan Rice</a></td></tr><tr><td>Zentrales Mittelfeld</td></tr></table></td><td class="zentriert">26</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/72.png?lm=1520611569" title="Irland" alt="Irland" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Arsenal" href="/fc-arsenal/startseite/verein/11"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/11.png?lm=1489787850" title="FC Arsenal" alt="FC Arsenal" class="" /></a></td><td class="rechts hauptlink"><a href="/declan-rice/marktwertverlauf/spieler/357662">110,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">15</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/412363-1746183850.jpg?lm=1" title="Rodrygo" alt="Rodrygo" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Rodrygo" href="/rodrygo/profil/spieler/412363">Rodrygo</a></td></tr><tr><td>Rechtsaußen</td></tr></table></td><td class="zentriert">24</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/26.png?lm=1520611569" title="Brasilien" alt="Brasilien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Real Madrid" href="/real-madrid/startseite/verein/418"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/418.png?lm=1729684474" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/rodrygo/marktwertverlauf/spieler/412363">100,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">16</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/349066-1680791339.jpg?lm=1" title="Alexander Isak" alt="Alexander Isak" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Alexander Isak" href="/alexander-isak/profil/spieler/349066">Alexander Isak</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">25</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/147.png?lm=1520611569" title="Schweden" alt="Schweden" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/46.png?lm=1520611569" title="Eritrea" alt="Eritrea" class="flaggenrahmen" /></td><td class="zentriert"><a title="Newcastle United" href="/newcastle-united/startseite/verein/762"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/762.png?lm=1472921161" title="Newcastle United" alt="Newcastle United" class="" /></a></td><td class="rechts hauptlink"><a href="/alexander-isak/marktwertverlauf/spieler/349066">100,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">17</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/316264-1678877651.jpg?lm=1" title="Martin Ødegaard" alt="Martin Ødegaard" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Martin Ødegaard" href="/martin-odegaard/profil/spieler/316264">Martin Ødegaard</a></td></tr><tr><td>Offensives Mittelfeld</td></tr></table></td><td class="zentriert">26</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/125.png?lm=1520611569" title="Norwegen" alt="Norwegen" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Arsenal" href="/fc-arsenal/startseite/verein/11"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/11.png?lm=1489787850" title="FC Arsenal" alt="FC Arsenal" class="" /></a></td><td class="rechts hauptlink"><a href="/martin-odegaard/marktwertverlauf/spieler/316264">100,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">18</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/406625-1695024988.jpg?lm=1" title="Lautaro Martínez" alt="Lautaro Martínez" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Lautaro Martínez" href="/lautaro-martinez/profil/spieler/406625">Lautaro Martínez</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">27</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/9.png?lm=1520611569" title="Argentinien" alt="Argentinien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Inter Mailand" href="/inter-mailand/startseite/verein/46"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/46.png?lm=1618900989" title="Inter Mailand" alt="Inter Mailand" class="" /></a></td><td class="rechts hauptlink"><a href="/lautaro-martinez/marktwertverlauf/spieler/406625">95,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">19</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/576024-1684920938.jpg?lm=1" title="Julián Alvarez" alt="Julián Alvarez" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Julián Alvarez" href="/julian-alvarez/profil/spieler/576024">Julián Alvarez</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">25</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/9.png?lm=1520611569" title="Argentinien" alt="Argentinien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/75.png?lm=1520611569" title="Italien" alt="Italien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Atlético Madrid" href="/atletico-madrid/startseite/verein/13"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/13.png?lm=1719915566" title="Atlético Madrid" alt="Atlético Madrid" class="" /></a></td><td class="rechts hauptlink"><a href="/julian-alvarez/marktwertverlauf/spieler/576024">90,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">20</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/534033-1669835342.jpg?lm=1" title="Alexis Mac Allister" alt="Alexis Mac Allister" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Alexis Mac Allister" href="/alexis-mac-allister/profil/spieler/534033">Alexis Mac Allister</a></td></tr><tr><td>Zentrales Mittelfeld</td></tr></table></td><td class="zentriert">26</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/9.png?lm=1520611569" title="Argentinien" alt="Argentinien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/75.png?lm=1520611569" title="Italien" alt="Italien" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Liverpool" href="/fc-liverpool/startseite/verein/31"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/31.png?lm=1727873452" title="FC Liverpool" alt="FC Liverpool" class="" /></a></td><td class="rechts hauptlink"><a href="/alexis-mac-allister/marktwertverlauf/spieler/534033">90,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">21</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/132098-1700211169.jpg?lm=1" title="Harry Kane" alt="Harry Kane" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Harry Kane" href="/harry-kane/profil/spieler/132098">Harry Kane</a></td></tr><tr><td>Mittelstürmer</td></tr></table></td><td class="zentriert">31</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Bayern München" href="/fc-bayern-munchen/startseite/verein/27"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/27.png?lm=1729503608" title="FC Bayern München" alt="FC Bayern München" class="" /></a></td><td class="rechts hauptlink"><a href="/harry-kane/marktwertverlauf/spieler/132098">90,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">22</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/480692-1697903145.jpg?lm=1" title="Luis Díaz" alt="Luis Díaz" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Luis Díaz" href="/luis-diaz/profil/spieler/480692">Luis Díaz</a></td></tr><tr><td>Linksaußen</td></tr></table></td><td class="zentriert">28</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/83.png?lm=1520611569" title="Kolumbien" alt="Kolumbien" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Liverpool" href="/fc-liverpool/startseite/verein/31"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/31.png?lm=1727873452" title="FC Liverpool" alt="FC Liverpool" class="" /></a></td><td class="rechts hauptlink"><a href="/luis-diaz/marktwertverlauf/spieler/480692">85,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">23</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/687626-1660729724.jpg?lm=1" title="Moisés Caicedo" alt="Moisés Caicedo" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Moisés Caicedo" href="/moises-caicedo/profil/spieler/687626">Moisés Caicedo</a></td></tr><tr><td>Defensives Mittelfeld</td></tr></table></td><td class="zentriert">23</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/44.png?lm=1520611569" title="Ecuador" alt="Ecuador" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Chelsea" href="/fc-chelsea/startseite/verein/631"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/631.png?lm=1682435911" title="FC Chelsea" alt="FC Chelsea" class="" /></a></td><td class="rechts hauptlink"><a href="/moises-caicedo/marktwertverlauf/spieler/687626">80,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="even">
+<td class="zentriert">24</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/566723-1725873883.jpg?lm=1" title="Michael Olise" alt="Michael Olise" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Michael Olise" href="/michael-olise/profil/spieler/566723">Michael Olise</a></td></tr><tr><td>Rechtsaußen</td></tr></table></td><td class="zentriert">23</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/50.png?lm=1520611569" title="Frankreich" alt="Frankreich" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/189.png?lm=1520611569" title="England" alt="England" class="flaggenrahmen" /></td><td class="zentriert"><a title="FC Bayern München" href="/fc-bayern-munchen/startseite/verein/27"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/27.png?lm=1729503608" title="FC Bayern München" alt="FC Bayern München" class="" /></a></td><td class="rechts hauptlink"><a href="/michael-olise/marktwertverlauf/spieler/566723">80,00 Mio. €</a>&nbsp;</td></tr>
+<tr class="odd">
+<td class="zentriert">25</td><td class=""><table class="inline-table"><tr><td rowspan="2"><a href="#"><img src="https://img.a.transfermarkt.technology/portrait/small/520624-1668522672.jpg?lm=1" title="Bruno Guimarães" alt="Bruno Guimarães" class="bilderrahmen-fixed" /></a></td><td class="hauptlink"><a title="Bruno Guimarães" href="/bruno-guimaraes/profil/spieler/520624">Bruno Guimarães</a></td></tr><tr><td>Defensives Mittelfeld</td></tr></table></td><td class="zentriert">27</td><td class="zentriert"><img src="https://tmssl.akamaized.net//images/flagge/verysmall/26.png?lm=1520611569" title="Brasilien" alt="Brasilien" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net//images/flagge/verysmall/157.png?lm=1520611569" title="Spanien" alt="Spanien" class="flaggenrahmen" /></td><td class="zentriert"><a title="Newcastle United" href="/newcastle-united/startseite/verein/762"><img src="https://tmssl.akamaized.net//images/wappen/verysmall/762.png?lm=1472921161" title="Newcastle United" alt="Newcastle United" class="" /></a></td><td class="rechts hauptlink"><a href="/bruno-guimaraes/marktwertverlauf/spieler/520624">80,00 Mio. €</a>&nbsp;</td></tr>
+</tbody>
+</table>
+<div class="pager"><ul class="tm-pagination">
+
+<li class="tm-pagination__list-item tm-pagination__list-item--active"><a href="/spieler-statistik/wertvollstespieler/marktwertetop" title="Seite 1" class="tm-pagination__link">1</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=2" title="Seite 2" class="tm-pagination__link">2</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=3" title="Seite 3" class="tm-pagination__link">3</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=4" title="Seite 4" class="tm-pagination__link">4</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=5" title="Seite 5" class="tm-pagination__link">5</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=6" title="Seite 6" class="tm-pagination__link">6</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=7" title="Seite 7" class="tm-pagination__link">7</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=8" title="Seite 8" class="tm-pagination__link">8</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=9" title="Seite 9" class="tm-pagination__link">9</a></li>
+<li class="tm-pagination__list-item"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=10" title="Seite 10" class="tm-pagination__link">10</a></li>
+<li class="tm-pagination__list-item tm-pagination__list-item--icon-next-page"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=2" title="Zur naechsten Seite" class="tm-pagination__link">&nbsp;&nbsp;</a></li>
+<li class="tm-pagination__list-item tm-pagination__list-item--icon-last-page"><a href="/spieler-statistik/wertvollstespieler/marktwertetop?page=20" title="Zur letzten Seite (Seite 20)" class="tm-pagination__link">&nbsp;&nbsp;</a></li></ul></div><div class="keys" style="display:none" title="/spieler-statistik/wertvollstespieler/marktwertetop"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span></div>
+</div>            </div>
+        </div>
+    </div>
+            <div class="large-4 columns">
+            <script type="text/javascript">//H3IXPRY("rectangle1")</script>
+<div class="werbung ad-placement-note werbung-rectangle1" data-ad-placement-note="Werbung">
+  <div id="mrec" style="min-height: 280px;"></div>
+</div>
+
+<span class="H3IXPRY_end"></span>
+<div class="box">
+    <h2 class="content-box-headline">Aktuelle Gerüchte</h2>
+
+    
+        <div class="statistik-widget-home-geruecht">
+            <a href="/ritsu-doan-zu-eintracht-frankfurt-/thread/forum/154/thread_id/1079019" title="Ritsu Doan zu Eintracht Frankfurt?">
+                <table>
+                    <tbody>
+                    <td style="width: 26px;">
+                        <div class="statistik-widget-home-geruecht-spieler">
+                            <img src="https://img.a.transfermarkt.technology/portrait/small/358504-1658413443.jpg?lm=1" title="Ritsu Doan" alt="Ritsu Doan" class="bilderrahmen" />                        </div>
+                    </td>
+                    <td style="max-width: 95px;">
+                        <div class="statistik-widget-home-geruecht-spieler-name">
+                                                        <span><a title="Ritsu Doan" href="/ritsu-doan/profil/spieler/358504">Ritsu Doan</a></span>
+                            <br>
+                            <span class="fwn schriftfarbe_normal show-for-pad show-for-small">RA</span>
+                            <span class="fwn schriftfarbe_normal hide-for-pad hide-for-small">Rechtsaußen</span>
+                        </div>
+                    </td>
+                    <td style="width:22px;">
+                        <div class="statistik-widget-geruecht-pfeil">
+                            <span class="statistik-widget-home-geruecht-pfeil">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td style="width:50px;">
+                        <div class="statistik-widget-home-geruecht-club">
+                            <img src="https://tmssl.akamaized.net//images/wappen/profil/24.png?lm=1700074979" title="Eintracht Frankfurt" alt="Eintracht Frankfurt" class="" />                        </div>
+                    </td>
+                    <td style="width:45px;">
+                        <div class="statistik-widget-home-geruecht-zahl">32</div>
+                    </td>
+                    <td style="position:relative;width:22px;">
+                                                    <div class="statistik-widget-home-geruecht-prozent">%</div>
+                            <div class="statistik-widget-home-geruecht-icon geruecht-ab">&nbsp;</div>
+                                            </td>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    
+        <div class="statistik-widget-home-geruecht">
+            <a href="/angelo-stiller-zu-fc-liverpool-/thread/forum/154/thread_id/1078274" title="Angelo Stiller zu FC Liverpool?">
+                <table>
+                    <tbody>
+                    <td style="width: 26px;">
+                        <div class="statistik-widget-home-geruecht-spieler">
+                            <img src="https://img.a.transfermarkt.technology/portrait/small/443710-1723707618.jpg?lm=1" title="Angelo Stiller" alt="Angelo Stiller" class="bilderrahmen" />                        </div>
+                    </td>
+                    <td style="max-width: 95px;">
+                        <div class="statistik-widget-home-geruecht-spieler-name">
+                                                        <span><a title="Angelo Stiller" href="/angelo-stiller/profil/spieler/443710">A. Stiller</a></span>
+                            <br>
+                            <span class="fwn schriftfarbe_normal show-for-pad show-for-small">DM</span>
+                            <span class="fwn schriftfarbe_normal hide-for-pad hide-for-small">Defensives Mittelfeld</span>
+                        </div>
+                    </td>
+                    <td style="width:22px;">
+                        <div class="statistik-widget-geruecht-pfeil">
+                            <span class="statistik-widget-home-geruecht-pfeil">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td style="width:50px;">
+                        <div class="statistik-widget-home-geruecht-club">
+                            <img src="https://tmssl.akamaized.net//images/wappen/profil/31.png?lm=1727873452" title="FC Liverpool" alt="FC Liverpool" class="" />                        </div>
+                    </td>
+                    <td style="width:45px;">
+                        <div class="statistik-widget-home-geruecht-zahl">26</div>
+                    </td>
+                    <td style="position:relative;width:22px;">
+                                                    <div class="statistik-widget-home-geruecht-prozent">%</div>
+                            <div class="statistik-widget-home-geruecht-icon geruecht-auf">&nbsp;</div>
+                                            </td>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    
+        <div class="statistik-widget-home-geruecht">
+            <a href="/julian-brandt-zu-sv-werder-bremen-/thread/forum/154/thread_id/1079527" title="Julian Brandt zu SV Werder Bremen?">
+                <table>
+                    <tbody>
+                    <td style="width: 26px;">
+                        <div class="statistik-widget-home-geruecht-spieler">
+                            <img src="https://img.a.transfermarkt.technology/portrait/small/187492-1709560849.jpg?lm=1" title="Julian Brandt" alt="Julian Brandt" class="bilderrahmen" />                        </div>
+                    </td>
+                    <td style="max-width: 95px;">
+                        <div class="statistik-widget-home-geruecht-spieler-name">
+                                                        <span><a title="Julian Brandt" href="/julian-brandt/profil/spieler/187492">J. Brandt</a></span>
+                            <br>
+                            <span class="fwn schriftfarbe_normal show-for-pad show-for-small">OM</span>
+                            <span class="fwn schriftfarbe_normal hide-for-pad hide-for-small">Offensives Mittelfeld</span>
+                        </div>
+                    </td>
+                    <td style="width:22px;">
+                        <div class="statistik-widget-geruecht-pfeil">
+                            <span class="statistik-widget-home-geruecht-pfeil">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td style="width:50px;">
+                        <div class="statistik-widget-home-geruecht-club">
+                            <img src="https://tmssl.akamaized.net//images/wappen/profil/86.png?lm=1403082298" title="SV Werder Bremen" alt="SV Werder Bremen" class="" />                        </div>
+                    </td>
+                    <td style="width:45px;">
+                        <div class="statistik-widget-home-geruecht-zahl">19</div>
+                    </td>
+                    <td style="position:relative;width:22px;">
+                                                    <div class="statistik-widget-home-geruecht-prozent">%</div>
+                            <div class="statistik-widget-home-geruecht-icon geruecht-ab">&nbsp;</div>
+                                            </td>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    
+        <div class="statistik-widget-home-geruecht">
+            <a href="/shuto-machino-zu-borussia-monchengladbach-/thread/forum/154/thread_id/1079640" title="Shuto Machino zu Borussia Mönchengladbach?">
+                <table>
+                    <tbody>
+                    <td style="width: 26px;">
+                        <div class="statistik-widget-home-geruecht-spieler">
+                            <img src="https://img.a.transfermarkt.technology/portrait/small/550580-1688645996.jpg?lm=1" title="Shuto Machino" alt="Shuto Machino" class="bilderrahmen" />                        </div>
+                    </td>
+                    <td style="max-width: 95px;">
+                        <div class="statistik-widget-home-geruecht-spieler-name">
+                                                        <span><a title="Shuto Machino" href="/shuto-machino/profil/spieler/550580">S. Machino</a></span>
+                            <br>
+                            <span class="fwn schriftfarbe_normal show-for-pad show-for-small">MS</span>
+                            <span class="fwn schriftfarbe_normal hide-for-pad hide-for-small">Mittelstürmer</span>
+                        </div>
+                    </td>
+                    <td style="width:22px;">
+                        <div class="statistik-widget-geruecht-pfeil">
+                            <span class="statistik-widget-home-geruecht-pfeil">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td style="width:50px;">
+                        <div class="statistik-widget-home-geruecht-club">
+                            <img src="https://tmssl.akamaized.net//images/wappen/profil/18.png?lm=1656585796" title="Borussia Mönchengladbach" alt="Borussia Mönchengladbach" class="" />                        </div>
+                    </td>
+                    <td style="width:45px;">
+                        <div class="statistik-widget-home-geruecht-zahl">39</div>
+                    </td>
+                    <td style="position:relative;width:22px;">
+                                                    <div class="statistik-widget-home-geruecht-prozent">%</div>
+                            <div class="statistik-widget-home-geruecht-icon geruecht-auf">&nbsp;</div>
+                                            </td>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    
+        <div class="statistik-widget-home-geruecht">
+            <a href="/m-kvistgaarden-zu-eintracht-frankfurt-/thread/forum/154/thread_id/1078123" title="M. Kvistgaarden zu Eintracht Frankfurt?">
+                <table>
+                    <tbody>
+                    <td style="width: 26px;">
+                        <div class="statistik-widget-home-geruecht-spieler">
+                            <img src="https://img.a.transfermarkt.technology/portrait/small/569663-1624457803.jpg?lm=1" title="Mathias Kvistgaarden" alt="Mathias Kvistgaarden" class="bilderrahmen" />                        </div>
+                    </td>
+                    <td style="max-width: 95px;">
+                        <div class="statistik-widget-home-geruecht-spieler-name">
+                                                        <span><a title="Mathias Kvistgaarden" href="/mathias-kvistgaarden/profil/spieler/569663">M. Kvistgaarden</a></span>
+                            <br>
+                            <span class="fwn schriftfarbe_normal show-for-pad show-for-small">MS</span>
+                            <span class="fwn schriftfarbe_normal hide-for-pad hide-for-small">Mittelstürmer</span>
+                        </div>
+                    </td>
+                    <td style="width:22px;">
+                        <div class="statistik-widget-geruecht-pfeil">
+                            <span class="statistik-widget-home-geruecht-pfeil">&nbsp;</span>
+                        </div>
+                    </td>
+                    <td style="width:50px;">
+                        <div class="statistik-widget-home-geruecht-club">
+                            <img src="https://tmssl.akamaized.net//images/wappen/profil/24.png?lm=1700074979" title="Eintracht Frankfurt" alt="Eintracht Frankfurt" class="" />                        </div>
+                    </td>
+                    <td style="width:45px;">
+                        <div class="statistik-widget-home-geruecht-zahl">46</div>
+                    </td>
+                    <td style="position:relative;width:22px;">
+                                                    <div class="statistik-widget-home-geruecht-prozent">%</div>
+                            <div class="statistik-widget-home-geruecht-icon geruecht-auf">&nbsp;</div>
+                                            </td>
+                    </tbody>
+                </table>
+            </a>
+        </div>
+    
+    <a class="content-link" href="/geruchtekuche/detail/forum/154">Zur Gerüchteküche</a>
+</div>
+
+<tm-latest-transfers 
+    link-mode="transfers" 
+    size="medium" 
+    widget-title="Letzte Transfers"
+    competition-id=""
+    >
+</tm-latest-transfers>        </div>
+    </div>
+
+<div class="werbung ad-placement-note werbung-fullsize_contentad" data-ad-placement-note="Werbung">
+  <div id="fullsize_contentad"></div>
+</div>
+
+
+        </main>
+        <footer class="tm-footer">
+               <section class="tm-footer__section-quick-links">
+        <strong class="tm-footer__headline tm-footer__headline--large">
+            Schnellzugriff        </strong>
+        <div class="tm-footer__link-wrapper">
+            <a href="/spieler-statistik/wertvollstespieler/marktwertetop"
+               onclick="tmEvent('footer', 'quick_links', '/spieler-statistik/wertvollstespieler')"
+               class="tm-footer__link tm-footer__link--arrow"
+            >
+                Wertvollste Spieler der Welt            </a>
+            <a href="/statistik/neuestetransfers"
+                onclick="tmEvent('footer', 'quick_links', '/statistik/neuestetransfers')"
+               class="tm-footer__link tm-footer__link--arrow"
+            >
+                Neueste Transfers            </a>
+            <a href="/geruechte/aktuellegeruechte/statistik"
+                onclick="tmEvent('footer', 'quick_links', '/statistik/aktuellegeruechte')"
+               class="tm-footer__link tm-footer__link--arrow"
+            >
+                Aktuelle Gerüchte            </a>
+            <a href="/spieler-statistik/marktwertaenderungen/marktwertetop"
+                onclick="tmEvent('footer', 'quick_links', '/spieler-statistik/marktwertaenderungen/marktwertetop')"
+               class="tm-footer__link tm-footer__link--arrow"
+            >
+                Aktuelle Marktwert-Updates            </a>
+            <a href="/statistik/weltrangliste"
+                onclick="tmEvent('footer', 'quick_links', '/statistik/weltrangliste')"
+               class="tm-footer__link tm-footer__link--arrow"
+            >
+                FIFA-Weltrangliste            </a>
+                    </div>
+    </section>
+                <section class="tm-footer__section-involved">
+            <strong class="tm-footer__headline tm-footer__headline--large">
+                Mitmachen            </strong>
+            <div class="tm-footer__link-wrapper">
+                <a href="/intern/paten"
+                    onclick="tmEvent('footer', 'be_involved', 'mods_data_scouts')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    Paten und Datenpfleger                </a>
+                <a href="/profil/bewerbung"
+                    onclick="tmEvent('footer', 'be_involved', 'apply_mod_datascout')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    Als Pate oder Datenpfleger bewerben                </a>
+                <a href="/intern/elfGebote"
+                    onclick="tmEvent('footer', 'be_involved', '11_commandments')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    11 Gebote                </a>
+                <a href="/intern/fehlermelden"
+                    onclick="tmEvent('footer', 'be_involved', 'found_mistake')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    Fehler gefunden?                </a>
+            </div>
+        </section>
+        <section class="tm-footer__section-career">
+            <strong class="tm-footer__headline tm-footer__headline--large">
+                Karriere            </strong>
+            <div class="tm-footer__link-wrapper">
+                                    <a href="/jobs"
+                       class="tm-footer__link tm-footer__link--arrow"
+                       onclick="tmEvent('footer', 'career', 'open_positions')"
+                    >
+                        Offene Stellen                    </a>
+                                <a href="/intern/tmteam"
+                   class="tm-footer__link tm-footer__link--arrow"
+                   onclick="tmEvent('footer', 'career', 'contact')"
+                >
+                    Kontakt                </a>
+            </div>
+        </section>
+        <section class="tm-footer__section-about">
+            <strong class="tm-footer__headline tm-footer__headline--large">
+                Über uns            </strong>
+            <div class="tm-footer__link-wrapper">
+                <a href="/intern/tmteam"
+                   onclick="tmEvent('footer', 'about_us', 'tm_team')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    Das TM-Team                </a>
+                <a href="/intern/faq"
+                   onclick="tmEvent('footer', 'about_us', 'faq')"
+                   class="tm-footer__link tm-footer__link--arrow"
+                >
+                    FAQ                </a>
+            </div>
+        </section>
+            <section class="tm-footer__section-social">
+        <strong class="tm-footer__headline
+            ">
+            Social Media        </strong>
+        <div class="tm-footer__social-wrapper">
+                        <a href="https://www.instagram.com/transfermarkt.de/"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'instagram')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/instaRebrush.svg"
+                         alt="instagram"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.facebook.com/transfermarkt"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'facebook')">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/fbRebrush.svg"
+                         alt="facebook"
+                         width="25"
+                         height="25"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://whatsapp.com/channel/0029Va1GC0s8qIzoRaZeyJ0V"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'whatsapp')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/whatsappRebrush.svg"
+                         alt="whatsapp"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://x.com/Transfermarkt"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'x')">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/twitter_rebrush.svg"
+                         alt="twitter"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.threads.net/@transfermarkt.de"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'threads')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/threadsRebrush.svg"
+                         alt="threads"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.tiktok.com/@transfermarkt"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'tiktok')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/tiktokRebrush.svg"
+                         alt="tiktok"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.youtube.com/user/transfermarkt"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'youtube')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/RebrushYoutube.svg"
+                         alt="youtube"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social header__icon--youtube"
+                    >
+                </a>
+                <a href="https://www.twitch.tv/transfermarkt"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'twitch')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/twitchRebrush.svg"
+                         alt="youtube"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.transfermarkt.de/intern/rssguide"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'rss')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/RebrushRss.svg"
+                         alt="rss"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                <a href="https://www.linkedin.com/company/transfermarkt-gmbh-&-co-kg"
+                   target="_blank"
+                   class="tm-footer__link-social"
+                   onclick="tmEvent('footer', 'social_media', 'linkedIn')"
+                >
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/linkedInRebrush.svg"
+                         alt="linkedIn"
+                         width="28"
+                         height="28"
+                         class="tm-footer__icon-social"
+                    >
+                </a>
+                        </div>
+    </section>
+            <section class="tm-footer__section-app-links">
+            <strong class="tm-footer__headline  ">
+                Jetzt die Transfermarkt-App herunterladen            </strong>
+            <div class="tm-footer__social-wrapper">
+                <a href="https://itunes.apple.com/de/app/transfermarkt/id1239455154?mt=8"
+                   target="_blank"
+                   onclick="tmEvent('footer', 'app', 'download_app')"
+                >
+                    <img src="/images/apps/Download_on_the_App_Store_Badge_DE_Source_135x40.svg"
+                         class="store-logo"
+                         id="app-store-logo"
+                         alt="Apple-Store"
+                         height="33"
+                         width="107"
+                    >
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=de.transfermarkt.v2"
+                   target="_blank"
+                   onclick="tmEvent('footer', 'app', 'download_app')"
+                >
+                    <img src="/images/apps/google-play-badgeEEE.svg"
+                         class="store-logo"
+                         id="google-store-logo"
+                         alt="Play-Store"
+                         height="33"
+                         width="107"
+                    >
+                </a>
+            </div>
+        </section>
+                </footer>
+                <div id="menue_overlay"></div>
+    </div>
+    <section class="tm-footer__mobile tm-footer__transfermarkt-info">
+        <section class="tm-footer__section-desktop-width">
+                            <section class="tm-footer__section-company-links">
+                    <span class="tm-footer__headline tm-footer__headline--medium">
+                        Weitere Transfermarkt-Projekte                    </span>
+                    <div class="tm-footer__project-wrapper">
+                        <a href="/wahretabelle"
+                           onclick="tmEvent('footer', 'projects', 'wahretabelle')"
+                           class="tm-footer__link"
+                        >
+                            Wahretabelle                        </a>
+                        <a href="https://www.soccerdonna.de/"
+                           onclick="tmEvent('footer', 'projects', 'soccerdonna')"
+                           class="tm-footer__link"
+                        >
+                            Soccerdonna.de                        </a>
+                        <a href="https://scoutastic.com/de/"
+                           onclick="tmEvent('footer', 'projects', 'scoutastic')"
+                           class="tm-footer__link"
+                        >
+                            Scoutastic.com                        </a>
+                    </div>
+                </section>
+                        <section class="tm-footer__section-company-infos">
+                <span class="tm-footer__headline tm-footer__headline--medium">&copy; Transfermarkt <span id="currentYear">2025</span></span>
+                <div class="tm-footer__company-wrapper">
+                    <a
+                    href="/intern/impressum"
+                    target="_blank" class="tm-footer__link tm-footer__link--blue"
+                    onclick="tmEvent('footer', 'officials', 'impressum')"
+                    >
+                        Impressum                    </a>
+                    <a
+                        href="/intern/web/datenschutz"
+                        target="_blank" class="tm-footer__link tm-footer__link--blue"
+                        onclick="tmEvent('footer', 'officials', 'data_protection')"
+                        >
+                        Datenschutz                    </a>
+                    <a
+                        href="javascript:void(0)"
+                        class="cmp-link tm-footer__link tm-footer__link--blue"
+                        onclick="tmEvent('footer', 'officials', 'privacy')"
+                    >
+                        Privatsphäre                    </a>
+                    <a
+                        href="javascript:void(0)"
+                        class="revoke-tracking tm-footer__link tm-footer__link--blue"
+                        onclick="tmEvent('footer', 'officials', 'tracking_revocation')"
+                    >
+                        Widerruf Tracking                    </a>
+                    <a
+                        href="/intern/anb"
+                        target="_blank"
+                        class="tm-footer__link tm-footer__link--blue"
+                        onclick="tmEvent('footer', 'officials', 'general_conduct_of_use')"
+                        >
+                        Nutzungsbedingungen                    </a>
+                                                <a
+                                href="https://www.stroeer.de/planen-buchen/onlinewerbung/transfermarktde/"
+                                target="_blank"
+                                class="tm-footer__link tm-footer__link--blue"
+                                onclick="tmEvent('footer', 'officials', 'media')"
+                                >
+                                Media                            </a>
+                                    </div>
+            </section>
+        </section>
+    </section>
+    <script type="text/javascript">
+	if(typeof(adet) == "boolean" && adet == false){
+		img_src="/static/singlepictures/jk99hhfsdh209nbnkjldgh90sghfsdlk";
+	} else {
+		img_src="/static/singlepictures/jku90whjlkjbwbta1g4b8h89fh8sgh8d";
+	}
+	var elem = document.createElement("img");
+	document.body.appendChild(elem);
+	elem.src = img_src;
+</script>
+
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var cnt = document.querySelectorAll('div.large-4.columns').length;
+                if (cnt == 1) {
+                    var sidebarDiv = document.querySelector('div.large-4.columns');
+                    if (sidebarDiv !== null) {
+                        var sidebar = document.getElementById('werbung_recommender_sidebar_wrapper');
+                        sidebarDiv.appendChild(sidebar);
+                        sidebar.style.display = 'block';
+                    }
+                }
+            });
+        </script>
+        <div id="werbung_recommender_sidebar_wrapper" style="display: none;">
+            <div 
+    id="recommender_sidebar" 
+    class="box"
+    >
+    <div class="OUTBRAIN" data-src="https://www.transfermarkt.de/spieler-statistik/wertvollstespieler/marktwertetop" data-widget-id="SB_1" data-ob-template="DE_Transfermarkt.de"></div>
+<tm-consent 
+    no-checkbox 
+    type="outbrain" 
+    embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGFzeW5jPSJhc3luYyIgc3JjPSIvL3dpZGdldHMub3V0YnJhaW4uY29tL291dGJyYWluLmpzIj48L3NjcmlwdD4=">
+</tm-consent>
+</div>
+        </div>
+    <tm-consent type="adition" no-checkbox embed="PHNjcmlwdCBzcmM9Imh0dHBzOi8vY3JlYXRpdmUtY2RuLm9kZHNzZXJ2ZS5jb20vbG9hZGVyLmpzP3B1Ymxpc2hlcj10bSIgYXN5bmM9ImFzeW5jIj48L3NjcmlwdD4="></tm-consent>    
+        <tm-modal id="tm-modal-revoke-tracking" additionalClose="Schliessen">
+        <div class="tm-modal__headline">Widerruf Tracking</div>
+        <p class="tm-modal__text">Sie haben erfolgreich Ihre Einwilligung in die Nutzung von Transfermarkt mit Tracking und Cookies widerrufen. Sie können sich jetzt zwischen dem Contentpass-Abo und der Nutzung mit personalisierter Werbung, Cookies und Tracking entscheiden.</p>
+    </tm-modal>
+
+<tm-consent type="stroeer" no-checkbox embed="PHNjcmlwdCAgc3JjPSJodHRwczovL2Nkbi5zdHJvZWVyZGlnaXRhbGdyb3VwLmRlL21ldGF0YWcvbGl2ZS90cmFuc2Zlcm1hcmt0LmRlL21ldGFUYWcubWluLmpzIiBhc3luYz0iYXN5bmMiPjwvc2NyaXB0Pg=="></tm-consent>
+<script type="text/javascript" src="https://tmssl.akamaized.net/assets/aa69c6e9c51f1e811847082c63633956/gridview/jquery.yiigridview.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/latest-transfers/bundle.js"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/vendors.min.js?lm=1746024697"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/domain-switcher/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/quick-select-bar/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/userbox/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/live-match-count/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/domain-note/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/consent/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/modal/bundle.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+	var loginUrl='/profil/login';
+	var onlyDE = '1';
+	var onlyMobile = '';
+	var onlyTablet = '';
+	var getUserID = '';
+
+jQuery(function($) {
+jQuery('#yw1').yiiGridView({'ajaxUpdate':['yw1'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid\x2Dview\x2Dloading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'\x7Bpage\x7D,\x20\x7Bsort\x7D','filterSelector':'\x7Bfilter\x7D','pageVar':'page','afterAjaxUpdate':function() {window.LazyLoadInstance.update(); tmTrackingAndAds(); document.dispatchEvent(new CustomEvent("tmInitTooltip"));}});
+});
+/*]]>*/
+</script>
+</body>
+
+</html>
