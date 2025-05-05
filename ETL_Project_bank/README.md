@@ -61,7 +61,7 @@ These queries were executed on the final database:
 
 ---
 
-## 🧾 Log Tracking
+## Log Tracking
 
 Each step is recorded in `code_log.txt`, including:
 
@@ -152,4 +152,3 @@ df['MC_GBP_Billion'] = [np.round(x * exchange_rate['GBP'], 2) for x in df['MC_US
 
 - Make sure you have internet access to fetch data and exchange rates.
 - You can rerun this pipeline bi-annually when IMF updates the data.
-"""
