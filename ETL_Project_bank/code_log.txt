@@ -1,0 +1,16 @@
+2025-May-05-12:14:28 : Preliminaries complete. Initiating ETL process
+2025-May-05-12:14:28 : Starting data extraction from URL
+2025-May-05-12:14:30 : Extraction complete. 10 rows extracted.
+2025-May-05-12:14:30 : Starting data transformation process
+2025-May-05-12:14:30 : Data transformation complete
+2025-May-05-12:14:30 : Data saved to CSV file at ./Largest_banks_data.csv
+2025-May-05-12:14:30 : Data loaded to Database table: Largest_banks
+2025-May-05-12:14:30 : Calling run_query function for query 1
+2025-May-05-12:14:30 : Running query: SELECT * FROM Largest_banks
+2025-May-05-12:14:30 : Calling run_query function for query 2
+2025-May-05-12:14:30 : Running query: SELECT AVG(MC_GBP_Billion) FROM Largest_banks
+2025-May-05-12:14:30 : Calling run_query function for query 3
+2025-May-05-12:14:30 : Running query: SELECT Name from Largest_banks WHERE MC_EUR_Billion > 100
+2025-May-05-12:14:30 : Calling run_query function for query 4
+2025-May-05-12:14:30 : Running query: SELECT Name, MC_USD_Billion from Largest_banks ORDER BY MC_USD_Billion DESC LIMIT 5
+2025-May-05-12:14:30 : ETL process complete.
