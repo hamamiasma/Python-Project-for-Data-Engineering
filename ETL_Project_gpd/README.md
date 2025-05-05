@@ -1,154 +1,83 @@
-# ETL Project: Top 10 Largest Banks by Market Capitalization
+# ETL Project: Countries by GDP (Nominal)
 
-## Project Overview
+## Project Description
 
-This project demonstrates an ETL (Extract, Transform, Load) pipeline to retrieve, convert, and store data on the top 10 largest banks in the world, ranked by market capitalization (in billion USD).
+This ETL project extracts, transforms, and loads data regarding countries and their GDP (in billions USD) as published by the International Monetary Fund (IMF). The goal is to make this data accessible for future business expansion analysis.
 
-The extracted data is transformed into multiple currencies using official exchange rates and made available in CSV and SQL formats for reporting from different global offices.
+The IMF publishes GDP data twice yearly, and this script is built to automatically handle such updates.
 
 ---
 
 ## Technologies Used
 
-- **Python 3**
-- **BeautifulSoup** – Web scraping
-- **Pandas & NumPy** – Data manipulation and math
-- **SQLite3** – Embedded database
-- **Requests** – Data fetching
-- **datetime** – Logging with timestamps
+- Python 3
+- BeautifulSoup (for web scraping)
+- Requests
+- Pandas & NumPy
+- SQLite3 (for database handling)
+- Logging with datetime
 
 ---
 
-## ETL Steps
+## ETL Workflow
 
-### 1. Extract
+### 1. **Extract**
+- Data is scraped from the [Wikipedia IMF GDP List (Archived)](https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29)
+- Table rows are parsed and filtered
+- Country names and their GDP in **millions USD** are extracted
 
-- Source: [Wikipedia - Largest Banks by Market Capitalization (Archived)](https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks)
-- Table extracted: "By market capitalization"
-- Columns: `Name`, `MC_USD_Billion`
-
-### 2. Transform
-
-- Load exchange rates from CSV:
-  - Source: `exchange_rate.csv`
-- Convert market capitalization to:
-  - GBP (`MC_GBP_Billion`)
-  - EUR (`MC_EUR_Billion`)
-  - INR (`MC_INR_Billion`)
+### 2. **Transform**
+- GDP values are cleaned (commas removed)
+- Converted from millions to **billions USD**
 - Rounded to 2 decimal places
+- Column renamed to GDP_USD_billions
 
-### 3. Load
-
-- Save to CSV: `Largest_banks_data.csv`
-- Save to SQLite database:
-  - File: `Banks.db`
-  - Table: `Largest_banks`
+### 3. **Load**
+- Data saved into a CSV: Countries_by_GDP.csv
+- Data loaded into SQLite3 DB: World_Economies.db, table Countries_by_GDP
 
 ---
 
-## SQL Queries
+## Query Example
 
-These queries were executed on the final database:
+After loading, a SQL query is run to extract all countries with GDP >= 100 billion USD:
 
-1. **Show full table**  
-   `SELECT * FROM Largest_banks;`
+sql
+SELECT * FROM Countries_by_GDP WHERE GDP_USD_billions >= 100;
 
-2. **Average market cap in GBP**  
-   `SELECT AVG(MC_GBP_Billion) FROM Largest_banks;`
 
-3. **Top 5 banks**  
-   `SELECT Name FROM Largest_banks LIMIT 5;`
-
----
-
-## Log Tracking
-
-Each step is recorded in `code_log.txt`, including:
-
-- Extraction completed
-- Transformation started
-- Data loaded into CSV and DB
-- SQL queries executed
-
-Log format:  
-`<timestamp> : <message>`
+The output is printed to terminal.
 
 ---
 
 ## Output Files
 
-| File                      | Description                                 |
-|---------------------------|---------------------------------------------|
-| `Largest_banks_data.csv`  | Final processed data in CSV format          |
-| `Banks.db`                | SQLite3 database with the table             |
-| `code_log.txt`            | ETL execution log with timestamps           |
-| `exchange_rate.csv`       | Currency exchange rates used in conversion  |
+| File                     | Description                                |
+|--------------------------|--------------------------------------------|
+| Countries_by_GDP.csv   | Cleaned GDP data in CSV format             |
+| World_Economies.db     | SQLite3 database with loaded GDP table     |
+| etl_project_log.txt    | Timestamped log of each ETL step           |
+| etl_project_gdp.py     | Python script for the entire ETL process   |
 
 ---
 
-### Explanation: `exchange_rate = exchange_rate.set_index('Currency').to_dict()['Rate']`
+## Log Tracking
 
-This line converts a CSV file containing exchange rates into a Python dictionary.
+Each step of the ETL process is logged into etl_project_log.txt using timestamped entries.
 
-1. **`set_index('Currency')`**  
-   ➤ Sets the Currency column as the DataFrame index. Example::
+Example:
 
-   ```csv
-   Currency,Rate
-   GBP,0.74
-   EUR,0.85
-   INR,74.3
-   ```
+2025-Apr-28-13:15:22 : Data extraction complete. Initiating Transformation process
 
-   → becomes:
-
-   ```
-           Rate
-   Currency      
-   GBP       0.74
-   EUR       0.85
-   INR      74.30
-   ```
-
-2. **`.to_dict()`**  
-   ➤ Converts the DataFrame into a nested dictionary::
-
-   ```python
-   {
-     'Rate': {
-       'GBP': 0.74,
-       'EUR': 0.85,
-       'INR': 74.3
-     }
-   }
-   ```
-
-3. **`['Rate']`**  
-   ➤ Extracts the inner dictionary for the Rate column::
-
-   ```python
-   {
-     'GBP': 0.74,
-     'EUR': 0.85,
-     'INR': 74.3
-   }
-   ```
-
-The result: A handy dictionary exchange_rate, which you can use to convert values from USD to other currencies – for example:
-
-```python
-df['MC_GBP_Billion'] = [np.round(x * exchange_rate['GBP'], 2) for x in df['MC_USD_Billion']]
-```
 ---
 
 ## 👤 Author
 
 **Asmaa Hamami**  
-> Junior Data Engineer  
+> Junior Data Engineer
 
 ---
 
-##  Notes
+##  Note
 
-- Make sure you have internet access to fetch data and exchange rates.
-- You can rerun this pipeline bi-annually when IMF updates the data.
+This project uses archived data for reproducibility. Update the URL in etl_project_gdp.py if newer GDP lists are available.

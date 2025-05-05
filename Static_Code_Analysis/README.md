@@ -1,0 +1,3 @@
+Static code analysis, or static analysis, is an application code efficiency verification activity that analyses source code for quality, reliability, and security without executing the code. Static code analysis is an essential part of any application development cycle and is available as a part of multiple frameworks with Python.
+
+One of the most popular frameworks is PyLint. PyLint basically evaluates the code against compliance with the PEP8 coding style guide and generates comments wherever it finds an issue.
