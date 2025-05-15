@@ -70,3 +70,13 @@ Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
 ## Kontakt
 
 Bei Fragen oder Anregungen kannst du mich über [GitHub](https://github.com/hamamiasma) kontaktieren.
+
+---
+
+## 👤 Author
+
+**Asmaa Hamami**  
+> Junior Data Engineer
+
+
+
