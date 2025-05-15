@@ -38,7 +38,7 @@ The pipeline collects data from multiple file formats (CSV and JSON and XML), tr
 > Imagine you are the owner of a start-up that built an AI model to predict if someone is at risk for diabetes based on their height and body weight.
 > Some of your data is in **CSV** format, while the other data is in **JSON** and **XML** files.
 
-![ETL Prozess](Bilder/Extract.png)
+![ETL Prozess](images/Extract.png)
 
 ## ETL Prozess Überblick
 
